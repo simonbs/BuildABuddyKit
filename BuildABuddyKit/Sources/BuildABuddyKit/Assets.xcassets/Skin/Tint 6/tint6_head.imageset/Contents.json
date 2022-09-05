@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "tint6_head.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

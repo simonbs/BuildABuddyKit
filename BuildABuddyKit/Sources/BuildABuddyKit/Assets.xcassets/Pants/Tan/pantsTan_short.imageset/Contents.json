@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "pantsTan_short.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

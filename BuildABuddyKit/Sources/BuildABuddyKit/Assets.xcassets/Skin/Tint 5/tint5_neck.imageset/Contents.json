@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "tint5_neck.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

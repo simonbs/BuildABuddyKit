@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "tint4_leg.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

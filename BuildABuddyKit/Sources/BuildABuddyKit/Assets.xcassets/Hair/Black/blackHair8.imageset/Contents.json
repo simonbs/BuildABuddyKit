@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "blackHair8.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

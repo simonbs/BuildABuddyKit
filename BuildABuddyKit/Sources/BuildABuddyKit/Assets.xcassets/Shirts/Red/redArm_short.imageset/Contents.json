@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "redArm_short.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
