@@ -60,7 +60,7 @@ private extension Hair.Style {
         case .style8:
             return CGPoint(x: 221, y: 116)
         case .style9:
-            return CGPoint(x: 218, y: 49)
+            return CGPoint(x: 223, y: 49)
         case .style10:
             return CGPoint(x: 223, y: 51)
         case .style11:
