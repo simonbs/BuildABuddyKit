@@ -22,7 +22,7 @@ struct PreviewView: View {
                     }
             }
             Spacer()
-        }.background(Color(uiColor: .secondarySystemBackground).opacity(0.2))
+        }
     }
 }
 
