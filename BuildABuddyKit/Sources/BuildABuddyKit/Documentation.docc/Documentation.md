@@ -6,6 +6,8 @@ A framework for generating buddies.
 
 BuildABuddyKit is a framework for generating characters and exporting those as images.
 
+![A collection of buddies generated using the framework](hero.png)
+
 ## Topics
 
 ### Essentials
