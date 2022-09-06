@@ -9,6 +9,7 @@ struct ContentView: View {
         NavigationView {
             VStack(spacing: 0) {
                 PreviewView(builder: builder)
+                Spacer().frame(height: 10)
                 Divider()
                 ConfiguratorView(builder: builder)
             }
@@ -36,13 +37,20 @@ struct ContentView: View {
 
 private extension ContentView {
     private func shareBuddy() {
-        let buddy = builder.build()
-        let image = BuddyRenderer.render(buddy)
-        let activityViewController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        let image = renderBuddy()
+        let message = "Look at this Buddy I created at @frenchkitconf!"
+        let activityViewController = UIActivityViewController(activityItems: [image, message], applicationActivities: nil)
         let foregroundScene = UIApplication.shared.connectedScenes.first { $0.activationState == .foregroundActive }
         if let foregroundWindowScene = foregroundScene as? UIWindowScene {
             let presentingViewController = foregroundWindowScene.keyWindow?.rootViewController
             presentingViewController?.present(activityViewController, animated: true)
         }
+    }
+
+    private func renderBuddy() -> UIImage {
+        let buddy = builder.build()
+        var renderer = BuddyRenderer()
+        renderer.backgroundColor = UIColor(builder.backgroundColor)
+        return renderer.render(buddy)
     }
 }

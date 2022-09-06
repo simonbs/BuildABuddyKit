@@ -1,5 +1,6 @@
 import BuildABuddyKit
 import SwiftUI
+import UIKit
 
 struct PreviewView: View {
     @ObservedObject private var builder: BuddyBuilder
@@ -11,13 +12,25 @@ struct PreviewView: View {
     var body: some View {
         HStack {
             Spacer()
-            Image(uiImage: BuddyRenderer.render(builder.build()))
-                .scaleEffect(x: 1 / 3, y: 1 / 3)
-                .frame(width: 200, height: 200)
-                .transaction { transaction in
-                    transaction.animation = nil
-                }
+            ZStack {
+                Image("PreviewBackground")
+                Image(uiImage: renderBuddy())
+                    .scaleEffect(x: 1 / 3, y: 1 / 3)
+                    .frame(width: 200, height: 200)
+                    .transaction { transaction in
+                        transaction.animation = nil
+                    }
+            }
             Spacer()
         }.background(Color(uiColor: .secondarySystemBackground).opacity(0.2))
+    }
+}
+
+private extension PreviewView {
+    private func renderBuddy() -> UIImage {
+        let buddy = builder.build()
+        var renderer = BuddyRenderer()
+        renderer.backgroundColor = UIColor(builder.backgroundColor)
+        return renderer.render(buddy)
     }
 }

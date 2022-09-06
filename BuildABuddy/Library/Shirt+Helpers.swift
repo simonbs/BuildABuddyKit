@@ -27,7 +27,7 @@ extension Shirt.Color: Identifiable {
     }
 }
 
-extension Shirt.Body.Style: Identifiable {
+extension Shirt.Front.Style: Identifiable {
     public var id: Self {
         return self
     }
@@ -54,7 +54,7 @@ extension Shirt.Body.Style: Identifiable {
     }
 }
 
-extension Shirt.Arms.Length: Identifiable {
+extension Shirt.Sleeve.Length: Identifiable {
     public var id: Self {
         return self
     }

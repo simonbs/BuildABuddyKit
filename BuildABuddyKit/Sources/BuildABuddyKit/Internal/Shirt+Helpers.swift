@@ -3,15 +3,15 @@ import Foundation
 
 extension Shirt {
     var assets: [Asset] {
-        if let arms = arms {
-            return [arms.leftAsset, arms.rightAsset, body.asset]
+        if let sleeves = sleeves {
+            return [sleeves.leftAsset, sleeves.rightAsset, front.asset]
         } else {
-            return [body.asset]
+            return [front.asset]
         }
     }
 }
 
-private extension Shirt.Body {
+private extension Shirt.Front {
     var asset: Asset {
         let name = "\(color.name)Shirt\(style.number)"
         let position = CGPoint(x: 223, y: 216)
@@ -19,7 +19,7 @@ private extension Shirt.Body {
     }
 }
 
-private extension Shirt.Arms {
+private extension Shirt.Sleeve {
     var leftAsset: Asset {
         let name = "\(color.name)Arm_\(length.name)"
         let position = CGPoint(x: length.leftXPosition, y: 215)
@@ -35,7 +35,7 @@ private extension Shirt.Arms {
     }
 }
 
-private extension Shirt.Body.Style {
+private extension Shirt.Front.Style {
     var number: Int {
         switch self {
         case .style1:
@@ -58,7 +58,7 @@ private extension Shirt.Body.Style {
     }
 }
 
-private extension Shirt.Arms.Length {
+private extension Shirt.Sleeve.Length {
     var name: String {
         switch self {
         case .long:

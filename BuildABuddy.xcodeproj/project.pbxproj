@@ -23,6 +23,13 @@
 		727E1BE228C640C800C2AFC4 /* Hair+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727E1BD628C640C800C2AFC4 /* Hair+Helpers.swift */; };
 		727E1BE328C640C800C2AFC4 /* Shirt+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727E1BD728C640C800C2AFC4 /* Shirt+Helpers.swift */; };
 		727E1BE428C640C800C2AFC4 /* BuddyBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727E1BD828C640C800C2AFC4 /* BuddyBuilder.swift */; };
+		72E60AFE28C74530009C25C7 /* NoseConfiguratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E60AFD28C74530009C25C7 /* NoseConfiguratorView.swift */; };
+		72E60B0128C7459E009C25C7 /* MouthConfiguratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E60B0028C7459E009C25C7 /* MouthConfiguratorView.swift */; };
+		72E60B0328C745B5009C25C7 /* HairConfiguratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E60B0228C745B5009C25C7 /* HairConfiguratorView.swift */; };
+		72E60B0528C745CA009C25C7 /* ShirtConfiguratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E60B0428C745CA009C25C7 /* ShirtConfiguratorView.swift */; };
+		72E60B0728C745E7009C25C7 /* PantsConfiguratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E60B0628C745E7009C25C7 /* PantsConfiguratorView.swift */; };
+		72E60B0928C74604009C25C7 /* ShoesConfiguratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E60B0828C74604009C25C7 /* ShoesConfiguratorView.swift */; };
+		72E60B0B28C74639009C25C7 /* EyesConfiguratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E60B0A28C74639009C25C7 /* EyesConfiguratorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +50,13 @@
 		727E1BD628C640C800C2AFC4 /* Hair+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Hair+Helpers.swift"; sourceTree = "<group>"; };
 		727E1BD728C640C800C2AFC4 /* Shirt+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shirt+Helpers.swift"; sourceTree = "<group>"; };
 		727E1BD828C640C800C2AFC4 /* BuddyBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuddyBuilder.swift; sourceTree = "<group>"; };
+		72E60AFD28C74530009C25C7 /* NoseConfiguratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoseConfiguratorView.swift; sourceTree = "<group>"; };
+		72E60B0028C7459E009C25C7 /* MouthConfiguratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouthConfiguratorView.swift; sourceTree = "<group>"; };
+		72E60B0228C745B5009C25C7 /* HairConfiguratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairConfiguratorView.swift; sourceTree = "<group>"; };
+		72E60B0428C745CA009C25C7 /* ShirtConfiguratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShirtConfiguratorView.swift; sourceTree = "<group>"; };
+		72E60B0628C745E7009C25C7 /* PantsConfiguratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantsConfiguratorView.swift; sourceTree = "<group>"; };
+		72E60B0828C74604009C25C7 /* ShoesConfiguratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesConfiguratorView.swift; sourceTree = "<group>"; };
+		72E60B0A28C74639009C25C7 /* EyesConfiguratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyesConfiguratorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,11 +135,26 @@
 		727E1BE528C640D800C2AFC4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				727E1BCD28C640C800C2AFC4 /* ConfiguratorView.swift */,
+				72E60AFF28C74535009C25C7 /* Configurator */,
 				727E1BBB28C63FCA00C2AFC4 /* ContentView.swift */,
 				727E1BCC28C640C800C2AFC4 /* PreviewView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		72E60AFF28C74535009C25C7 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				727E1BCD28C640C800C2AFC4 /* ConfiguratorView.swift */,
+				72E60B0A28C74639009C25C7 /* EyesConfiguratorView.swift */,
+				72E60B0228C745B5009C25C7 /* HairConfiguratorView.swift */,
+				72E60B0028C7459E009C25C7 /* MouthConfiguratorView.swift */,
+				72E60AFD28C74530009C25C7 /* NoseConfiguratorView.swift */,
+				72E60B0628C745E7009C25C7 /* PantsConfiguratorView.swift */,
+				72E60B0428C745CA009C25C7 /* ShirtConfiguratorView.swift */,
+				72E60B0828C74604009C25C7 /* ShoesConfiguratorView.swift */,
+			);
+			path = Configurator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,15 +230,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				727E1BE128C640C800C2AFC4 /* Eyebrow+Helpers.swift in Sources */,
+				72E60B0128C7459E009C25C7 /* MouthConfiguratorView.swift in Sources */,
+				72E60B0728C745E7009C25C7 /* PantsConfiguratorView.swift in Sources */,
 				727E1BBC28C63FCA00C2AFC4 /* ContentView.swift in Sources */,
 				727E1BE328C640C800C2AFC4 /* Shirt+Helpers.swift in Sources */,
 				727E1BDB28C640C800C2AFC4 /* Mouth+Helpers.swift in Sources */,
+				72E60B0928C74604009C25C7 /* ShoesConfiguratorView.swift in Sources */,
+				72E60B0328C745B5009C25C7 /* HairConfiguratorView.swift in Sources */,
 				727E1BDE28C640C800C2AFC4 /* Pants+Helpers.swift in Sources */,
+				72E60B0B28C74639009C25C7 /* EyesConfiguratorView.swift in Sources */,
 				727E1BDC28C640C800C2AFC4 /* Nose+Helpers.swift in Sources */,
 				727E1BE028C640C800C2AFC4 /* Skin+Helpers.swift in Sources */,
 				727E1BBA28C63FCA00C2AFC4 /* BuildABuddyApp.swift in Sources */,
+				72E60B0528C745CA009C25C7 /* ShirtConfiguratorView.swift in Sources */,
 				727E1BE228C640C800C2AFC4 /* Hair+Helpers.swift in Sources */,
 				727E1BDF28C640C800C2AFC4 /* Shoe+Helpers.swift in Sources */,
+				72E60AFE28C74530009C25C7 /* NoseConfiguratorView.swift in Sources */,
 				727E1BD928C640C800C2AFC4 /* PreviewView.swift in Sources */,
 				727E1BDD28C640C800C2AFC4 /* Eye+Helpers.swift in Sources */,
 				727E1BE428C640C800C2AFC4 /* BuddyBuilder.swift in Sources */,
