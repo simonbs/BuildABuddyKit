@@ -1,9 +1,18 @@
 import BuildABuddyKit
 import SwiftUI
 
+/// A view containing controls for configuring the shoes of a buddy.
 struct ShoesConfiguratorView: View {
-    @ObservedObject var builder: BuddyBuilder
+    /// An object containing the configuration of the buddy.
+    @ObservedObject private var builder: BuddyBuilder
 
+    /// Creates a `SheetConfiguratorView` given a `BuddyBuilder`.
+    /// - Parameter builder: An object containing the configuration of the buddy.
+    init(builder: BuddyBuilder) {
+        self.builder = builder
+    }
+
+    /// The content and behavior of the view.
     var body: some View {
         List {
             Picker("Style", selection: $builder.shoeStyle) {

@@ -1,9 +1,18 @@
 import BuildABuddyKit
 import SwiftUI
 
+/// A view containing controls for configuring the shirt of a buddy.
 struct ShirtConfiguratorView: View {
-    @ObservedObject var builder: BuddyBuilder
+    /// An object containing the configuration of the buddy.
+    @ObservedObject private var builder: BuddyBuilder
 
+    /// Creates a `ShirtConfiguratorView` given a `BuddyBuilder`.
+    /// - Parameter builder: An object containing the configuration of the buddy.
+    init(builder: BuddyBuilder) {
+        self.builder = builder
+    }
+
+    /// The content and behavior of the view.
     var body: some View {
         List {
             Picker("Front Style", selection: $builder.shirtFrontStyle) {

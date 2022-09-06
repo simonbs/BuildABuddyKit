@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		727E1BBA28C63FCA00C2AFC4 /* BuildABuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727E1BB928C63FCA00C2AFC4 /* BuildABuddyApp.swift */; };
-		727E1BBC28C63FCA00C2AFC4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727E1BBB28C63FCA00C2AFC4 /* ContentView.swift */; };
+		727E1BBC28C63FCA00C2AFC4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727E1BBB28C63FCA00C2AFC4 /* MainView.swift */; };
 		727E1BBE28C63FCC00C2AFC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 727E1BBD28C63FCC00C2AFC4 /* Assets.xcassets */; };
 		727E1BCB28C640A400C2AFC4 /* BuildABuddyKit in Frameworks */ = {isa = PBXBuildFile; productRef = 727E1BCA28C640A400C2AFC4 /* BuildABuddyKit */; };
 		727E1BD928C640C800C2AFC4 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727E1BCC28C640C800C2AFC4 /* PreviewView.swift */; };
@@ -30,12 +30,13 @@
 		72E60B0728C745E7009C25C7 /* PantsConfiguratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E60B0628C745E7009C25C7 /* PantsConfiguratorView.swift */; };
 		72E60B0928C74604009C25C7 /* ShoesConfiguratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E60B0828C74604009C25C7 /* ShoesConfiguratorView.swift */; };
 		72E60B0B28C74639009C25C7 /* EyesConfiguratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E60B0A28C74639009C25C7 /* EyesConfiguratorView.swift */; };
+		72E60B0D28C76B0C009C25C7 /* Documentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = 72E60B0C28C76B0C009C25C7 /* Documentation.docc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		727E1BB628C63FCA00C2AFC4 /* BuildABuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuildABuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		727E1BB928C63FCA00C2AFC4 /* BuildABuddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildABuddyApp.swift; sourceTree = "<group>"; };
-		727E1BBB28C63FCA00C2AFC4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		727E1BBB28C63FCA00C2AFC4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		727E1BBD28C63FCC00C2AFC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		727E1BC828C6408700C2AFC4 /* BuildABuddyKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = BuildABuddyKit; sourceTree = "<group>"; };
 		727E1BCC28C640C800C2AFC4 /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
@@ -57,6 +58,7 @@
 		72E60B0628C745E7009C25C7 /* PantsConfiguratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantsConfiguratorView.swift; sourceTree = "<group>"; };
 		72E60B0828C74604009C25C7 /* ShoesConfiguratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesConfiguratorView.swift; sourceTree = "<group>"; };
 		72E60B0A28C74639009C25C7 /* EyesConfiguratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyesConfiguratorView.swift; sourceTree = "<group>"; };
+		72E60B0C28C76B0C009C25C7 /* Documentation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Documentation.docc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		727E1BB828C63FCA00C2AFC4 /* BuildABuddy */ = {
 			isa = PBXGroup;
 			children = (
+				72E60B0C28C76B0C009C25C7 /* Documentation.docc */,
 				727E1BB928C63FCA00C2AFC4 /* BuildABuddyApp.swift */,
 				727E1BBD28C63FCC00C2AFC4 /* Assets.xcassets */,
 				727E1BCE28C640C800C2AFC4 /* Library */,
@@ -136,7 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				72E60AFF28C74535009C25C7 /* Configurator */,
-				727E1BBB28C63FCA00C2AFC4 /* ContentView.swift */,
+				727E1BBB28C63FCA00C2AFC4 /* MainView.swift */,
 				727E1BCC28C640C800C2AFC4 /* PreviewView.swift */,
 			);
 			path = Views;
@@ -232,7 +235,7 @@
 				727E1BE128C640C800C2AFC4 /* Eyebrow+Helpers.swift in Sources */,
 				72E60B0128C7459E009C25C7 /* MouthConfiguratorView.swift in Sources */,
 				72E60B0728C745E7009C25C7 /* PantsConfiguratorView.swift in Sources */,
-				727E1BBC28C63FCA00C2AFC4 /* ContentView.swift in Sources */,
+				727E1BBC28C63FCA00C2AFC4 /* MainView.swift in Sources */,
 				727E1BE328C640C800C2AFC4 /* Shirt+Helpers.swift in Sources */,
 				727E1BDB28C640C800C2AFC4 /* Mouth+Helpers.swift in Sources */,
 				72E60B0928C74604009C25C7 /* ShoesConfiguratorView.swift in Sources */,
@@ -242,6 +245,7 @@
 				727E1BDC28C640C800C2AFC4 /* Nose+Helpers.swift in Sources */,
 				727E1BE028C640C800C2AFC4 /* Skin+Helpers.swift in Sources */,
 				727E1BBA28C63FCA00C2AFC4 /* BuildABuddyApp.swift in Sources */,
+				72E60B0D28C76B0C009C25C7 /* Documentation.docc in Sources */,
 				72E60B0528C745CA009C25C7 /* ShirtConfiguratorView.swift in Sources */,
 				727E1BE228C640C800C2AFC4 /* Hair+Helpers.swift in Sources */,
 				727E1BDF28C640C800C2AFC4 /* Shoe+Helpers.swift in Sources */,

@@ -2,9 +2,12 @@ import BuildABuddyKit
 import SwiftUI
 import UIKit
 
-struct ContentView: View {
+/// Main view of the app that displays the preview and the configurator.
+struct MainView: View {
+    /// An object containing the configuration of the buddy.
     @StateObject private var builder = BuddyBuilder()
 
+    /// The content and behavior of the view.
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
@@ -35,7 +38,7 @@ struct ContentView: View {
     }
 }
 
-private extension ContentView {
+private extension MainView {
     private func shareBuddy() {
         let image = renderBuddy()
         let message = "Look at this Buddy I created at @frenchkitconf!"
