@@ -30,7 +30,7 @@ public struct BuddyRenderer {
         format.scale = 1
         format.opaque = false
         let renderer = UIGraphicsImageRenderer(size: canvasSize, format: format)
-        return renderer.image { context in
+        let data = renderer.pngData { context in
             let cgContext = context.cgContext
             let rect = CGRect(origin: .zero, size: canvasSize)
             cgContext.clear(rect)
@@ -50,5 +50,6 @@ public struct BuddyRenderer {
                 }
             }
         }
+        return UIImage(data: data)!
     }
 }
