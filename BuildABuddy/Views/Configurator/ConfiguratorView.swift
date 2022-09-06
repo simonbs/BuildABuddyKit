@@ -47,6 +47,9 @@ struct ConfiguratorView: View {
                         Text("Nose")
                     }
                 }
+                Section {
+                    Toggle("Wave", isOn: $builder.isWaving)
+                }
             }.listStyle(.insetGrouped)
         }
     }

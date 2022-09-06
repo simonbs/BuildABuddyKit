@@ -1,6 +1,6 @@
 extension Buddy {
     var assets: [Asset] {
-        var assets = skin.assets
+        var assets = skin.assets(for: pose)
         if let eyeAssets = eyes?.assets {
             assets.append(contentsOf: eyeAssets)
         }
@@ -17,7 +17,7 @@ extension Buddy {
         if let pantsAssets = pants?.assets {
             assets.append(contentsOf: pantsAssets)
         }
-        assets.append(contentsOf: shirt.assets)
+        assets.append(contentsOf: shirt.assets(for: pose))
         if let hairAsset = hair?.asset {
             assets.append(hairAsset)
         }

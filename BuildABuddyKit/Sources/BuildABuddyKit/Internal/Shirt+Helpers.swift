@@ -2,9 +2,9 @@ import CoreGraphics
 import Foundation
 
 extension Shirt {
-    var assets: [Asset] {
+    func assets(for pose: Pose) -> [Asset] {
         if let sleeves = sleeves {
-            return [sleeves.leftAsset, sleeves.rightAsset, front.asset]
+            return [sleeves.leftAsset, sleeves.rightAsset(for: pose), front.asset]
         } else {
             return [front.asset]
         }
@@ -27,11 +27,12 @@ private extension Shirt.Sleeve {
         return Asset(name: name, position: position, flipped: true, rotation: rotation)
     }
     
-    var rightAsset: Asset {
+    func rightAsset(for pose: Pose) -> Asset {
         let name = "\(color.name)Arm_\(length.name)"
-        let position = CGPoint(x: length.rightXPosition, y: 215)
-        let rotation = Measurement<UnitAngle>(value: 30, unit: .degrees)
-        return Asset(name: name, position: position, rotation: rotation)
+        let position = length.rightPosition(for: pose)
+        let rotation = length.rightRotation(for: pose)
+        let flipped = pose == .wave
+        return Asset(name: name, position: position, flipped: flipped, rotation: rotation)
     }
 }
 
@@ -81,14 +82,31 @@ private extension Shirt.Sleeve.Length {
         }
     }
 
-    var rightXPosition: CGFloat {
-        switch self {
-        case .long:
-            return 281
-        case .short:
-            return 302
-        case .shorter:
-            return 308
+    func rightPosition(for pose: Pose) -> CGPoint {
+        switch (pose, self) {
+        case (.stand, .long):
+            return CGPoint(x: 281, y: 215)
+        case (.stand, .short):
+            return CGPoint(x: 302, y: 215)
+        case (.stand, .shorter):
+            return CGPoint(x: 308, y: 215)
+        case (.wave, .long):
+            return CGPoint(x: 296, y: 110)
+        case (.wave, .short):
+            return CGPoint(x: 322, y: 166)
+        case (.wave, .shorter):
+            return CGPoint(x: 326, y: 202)
+        }
+    }
+
+    func rightRotation(for pose: Pose) -> Measurement<UnitAngle> {
+        switch (pose, self) {
+        case (.stand, _):
+            return Measurement<UnitAngle>(value: 30, unit: .degrees)
+        case (.wave, .long):
+            return Measurement<UnitAngle>(value: 155, unit: .degrees)
+        case (.wave, .short), (.wave, .shorter):
+            return Measurement<UnitAngle>(value: 152, unit: .degrees)
         }
     }
 }

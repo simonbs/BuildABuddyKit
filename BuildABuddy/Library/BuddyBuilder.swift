@@ -29,17 +29,24 @@ final class BuddyBuilder: ObservableObject {
     @Published var isMouthEnabled = [true, false].randomElement()!
     @Published var isNoseEnabled = [true, false].randomElement()!
     @Published var isPantsEnabled = true
+    @Published var isWaving = false
 
     func build() -> Buddy {
-        return Buddy(skin: skin,
-                     eyes: buildEyes(),
-                     eyebrows: buildEyebrows(),
-                     nose: isNoseEnabled ? nose : nil,
-                     mouth: isMouthEnabled ? mouth : nil,
-                     hair: buildHair(),
-                     shirt: buildShirt(),
-                     pants: buildPants(),
-                     shoes: buildShoes())
+        var buddy = Buddy(skin: skin,
+                          eyes: buildEyes(),
+                          eyebrows: buildEyebrows(),
+                          nose: isNoseEnabled ? nose : nil,
+                          mouth: isMouthEnabled ? mouth : nil,
+                          hair: buildHair(),
+                          shirt: buildShirt(),
+                          pants: buildPants(),
+                          shoes: buildShoes())
+        if isWaving {
+            buddy.wave()
+        } else {
+            buddy.stand()
+        }
+        return buddy
     }
 
     func randomize() {

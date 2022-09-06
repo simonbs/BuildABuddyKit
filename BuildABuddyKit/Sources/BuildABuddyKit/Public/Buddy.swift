@@ -32,6 +32,10 @@ public struct Buddy {
     public var pants: Pants?
     /// The buddy's shoes.
     public var shoes: Shoe
+    /// The pose of the buddy.
+    ///
+    /// The pose can be changed by calling <doc:stand()> and <doc:wave()>. Defaults to a standing pose.
+    private(set) var pose: Pose = .stand
 
     /// Create a `Buddy` given an appearance.
     /// - Parameters:
@@ -96,5 +100,15 @@ public struct Buddy {
                      shirt: .random,
                      pants: .random,
                      shoes: .random)
+    }
+
+    /// Makes the buddy wave with one of their hands.
+    mutating public func wave() {
+        pose = .wave
+    }
+
+    /// Makes the buddy stand still with their hands pointing downwards.
+    mutating public func stand() {
+        pose = .stand
     }
 }

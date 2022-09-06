@@ -2,8 +2,13 @@ import CoreGraphics
 import Foundation
 
 extension Skin {
-    var assets: [Asset] {
-        return [neckAsset, headAsset, leftArmAsset, rightArmAsset, leftHandAsset, rightHandAsset, leftLegAsset, rightLegAsset]
+    func assets(for pose: Pose) -> [Asset] {
+        return [
+            neckAsset, headAsset,
+            leftArmAsset, rightArmAsset(for: pose),
+            leftHandAsset, rightHandAsset(for: pose),
+            leftLegAsset, rightLegAsset
+        ]
     }
 
     private var headAsset: Asset {
@@ -25,11 +30,18 @@ extension Skin {
         return Asset(name: name, position: position, flipped: true, rotation: rotation)
     }
 
-    private var rightArmAsset: Asset {
+    private func rightArmAsset(for pose: Pose) -> Asset {
         let name = "tint\(number)_arm"
-        let position = CGPoint(x: 283, y: 218)
-        let rotation = Measurement<UnitAngle>(value: 30, unit: .degrees)
-        return Asset(name: name, position: position, rotation: rotation)
+        switch pose {
+        case .stand:
+            let position = CGPoint(x: 283, y: 218)
+            let rotation = Measurement<UnitAngle>(value: 30, unit: .degrees)
+            return Asset(name: name, position: position, rotation: rotation)
+        case .wave:
+            let position = CGPoint(x: 303, y: 98)
+            let rotation = Measurement<UnitAngle>(value: 150, unit: .degrees)
+            return Asset(name: name, position: position, flipped: true, rotation: rotation)
+        }
     }
 
     private var leftHandAsset: Asset {
@@ -39,11 +51,18 @@ extension Skin {
         return Asset(name: name, position: position, flipped: true, rotation: rotation)
     }
 
-    private var rightHandAsset: Asset {
+    private func rightHandAsset(for pose: Pose) -> Asset {
         let name = "tint\(number)_hand"
-        let position = CGPoint(x: 377, y: 361)
-        let rotation = Measurement<UnitAngle>(value: 45, unit: .degrees)
-        return Asset(name: name, position: position, rotation: rotation)
+        switch pose {
+        case .stand:
+            let position = CGPoint(x: 377, y: 361)
+            let rotation = Measurement<UnitAngle>(value: 45, unit: .degrees)
+            return Asset(name: name, position: position, rotation: rotation)
+        case .wave:
+            let position = CGPoint(x: 405, y: 55)
+            let rotation = Measurement<UnitAngle>(value: 300, unit: .degrees)
+            return Asset(name: name, position: position, rotation: rotation)
+        }
     }
 
     private var leftLegAsset: Asset {
