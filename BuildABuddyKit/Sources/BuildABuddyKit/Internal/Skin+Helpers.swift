@@ -31,6 +31,7 @@ extension Skin {
         let rotation = Measurement<UnitAngle>(value: 30, unit: .degrees)
         return Asset(name: name, position: position, rotation: rotation)
     }
+
     private var leftHandAsset: Asset {
         let name = "tint\(number)_hand"
         let position = CGPoint(x: 129, y: 361)
