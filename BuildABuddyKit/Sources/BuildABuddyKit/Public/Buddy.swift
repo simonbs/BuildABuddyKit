@@ -1,8 +1,23 @@
 /// A buddy that can be rendered to an image using a <doc:BuddyRenderer>.
 ///
-/// An instance of `Buddy` describes the appearance of that buddy, and as such, the image that the <doc:BuddyRenderer> will output.
+/// An instance of `Buddy` describes the appearance of that buddy, and as such, the image that <doc:BuddyRenderer/render(_:)> outputs.
 ///
-/// You can get started
+/// Get started by creating an instance of `Buddy` and set the properties to customize the appearance.
+///
+/// ```swift
+/// let buddy = Buddy()
+/// buddy.tint = .tint2
+/// buddy.hair = Hair(style: .style12, color: .blonde)
+/// buddy.eyes = Eye(size: .large, color: .pine)
+/// buddy.eyebrows = Eyebrow(style: .style2, color: .blonde)
+/// buddy.mouth = .happy
+/// ```
+///
+/// Optionally make your buddy wave.
+///
+/// ```swift
+/// buddy.wave()
+/// ```
 public struct Buddy {
     /// The buddy's skin.
     public var skin: Skin
@@ -103,11 +118,19 @@ public struct Buddy {
     }
 
     /// Makes the buddy wave with one of their hands.
+    ///
+    /// See below for a preview of the pose.
+    ///
+    /// ![Preview of the pose](pose_wave.png)
     mutating public func wave() {
         pose = .wave
     }
 
     /// Makes the buddy stand still with their hands pointing downwards.
+    ///
+    /// See below for a preview of the pose.
+    ///
+    /// ![Preview of the pose](pose_stand.png)
     mutating public func stand() {
         pose = .stand
     }

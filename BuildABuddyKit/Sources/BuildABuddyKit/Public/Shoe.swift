@@ -5,14 +5,34 @@ public struct Shoe {
     /// The shoe style determines the shape of the shoe. Refer to the <doc:Color-swift.enum> for the color of a shoe.
     public enum Style: CaseIterable {
         /// A style of shoe with a curvy look.
+        ///
+        /// See below for a preview of the style.
+        ///
+        /// ![Preview of the style](shoe_style_1.png)
         case style1
         /// A style of shoe with a pointy look.
+        ///
+        /// See below for a preview of the style.
+        ///
+        /// ![Preview of the style](shoe_style_2.png)
         case style2
         /// A style of shoe with a inward curve.
+        ///
+        /// See below for a preview of the style.
+        ///
+        /// ![Preview of the style](shoe_style_3.png)
         case style3
         /// A style of shoe with a curvy look and a heel.
+        ///
+        /// See below for a preview of the style.
+        ///
+        /// ![Preview of the style](shoe_style_4.png)
         case style4
         /// A style of shoe with an inward curve and a heel.
+        ///
+        /// See below for a preview of the style.
+        ///
+        /// ![Preview of the style](shoe_style_5.png)
         case style5
 
         /// A random shoe style.
@@ -24,16 +44,40 @@ public struct Shoe {
     /// The color of a shoe.
     public enum Color: CaseIterable {
         /// A black shoe color.
+        ///
+        /// See below for a preview of the color.
+        ///
+        /// ![Preview of the color](shoe_color_black.png)
         case black
         /// A light brown shoe color.
+        ///
+        /// See below for a preview of the color.
+        ///
+        /// ![Preview of the color](shoe_color_brown1.png)
         case brown1
         /// A dark brown shoe color.
+        ///
+        /// See below for a preview of the color.
+        ///
+        /// ![Preview of the color](shoe_color_brown2.png)
         case brown2
         /// A grey shoe color.
+        ///
+        /// See below for a preview of the color.
+        ///
+        /// ![Preview of the color](shoe_color_grey.png)
         case grey
         /// A red shoe color.
+        ///
+        /// See below for a preview of the color.
+        ///
+        /// ![Preview of the color](shoe_color_red.png)
         case red
         /// A tan shoe color.
+        ///
+        /// See below for a preview of the color.
+        ///
+        /// ![Preview of the color](shoe_color_tan.png)
         case tan
 
         /// A random shoe color.
