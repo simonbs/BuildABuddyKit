@@ -10,7 +10,6 @@
 
 - ``render(_:)``
 
-
 ### Customizing the Output
 
 - ``backgroundColor``
