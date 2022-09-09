@@ -1,0 +1,39 @@
+@Tutorial(time: 30) {
+    @Intro(title: "Customizing a Buddy") {
+        This tutorial will guide you through setting up your project and customizing your first buddy.
+        
+<!--        @Image(source: <#file#>, alt: "<#accessible description#>")-->
+    }
+    
+    @Section(title: "Setting up the project") {
+        @ContentAndMedia {
+            Open Xcode and either click "Create a new Xcode project" "in Xcode’s startup window, or choose File > New > Project.
+            
+            @Image(source: 01-customizing-a-buddy-01-01.png, alt: "A screenshot of the Welcome to Xcode screen, which displays when you open Xcode. There are three options to choose from when you open Xcode: Create a new Xcode project, Clone an existing project, and Open a project or file. The first option — Create a new Xcode project — is highlighted.")
+        }
+        
+        @Steps {
+            @Step {
+                In the template selector, select iOS as the platform, select the App template, and then click Next. 
+                
+                @Image(source: 01-customizing-a-buddy-01-02.png, alt: "A screenshot of the template selector sheet in Xcode. In the top row, iOS is selected as the platform. In the Application section, App is selected as the template; there is a highlight placed over the Next button at the lower-right of the sheet.")
+            }
+            
+            @Step {
+                Enter "BuddyCreator" as the product name, select "SwiftUI" for the interface "Swift"" for the language, and click Next. Choose a location to save the BuddyCreator project on your Mac.
+                
+<!--                @Code(name: "<#display name#>", file: <#filename.swift#>)-->
+            }
+            
+            @Step {
+                Add BuildABuddyKit as a Swift Package to your project by right-clicking your project in the Project navigator and selecting "Add Packages…"
+            }
+            
+            @Step {
+                Search for "https://github.com/simonbs/BuildABuddy" and select BuildABuddyKit in the search results. Specify a dependency rule, select the TextCompanion project under "Add to Project", and then select "Add Package".
+                
+                It is recommended to specify the "Up to Next Major Version" dependency rule. This ensures that you get all bug fixes and new features of Runestone.
+            }
+        }
+    }
+}
