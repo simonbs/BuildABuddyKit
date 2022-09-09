@@ -16,23 +16,10 @@ struct PreviewView: View {
             Spacer()
             ZStack {
                 Image("PreviewBackground")
-                Image(uiImage: renderBuddy())
-                    .scaleEffect(x: 1 / 3, y: 1 / 3)
-                    .frame(width: 200, height: 200)
-                    .transaction { transaction in
-                        transaction.animation = nil
-                    }
-            }
+                builder.backgroundColor
+                BuddyImage(buddy: builder.build())
+            }.frame(width: 200, height: 200)
             Spacer()
         }
-    }
-}
-
-private extension PreviewView {
-    private func renderBuddy() -> UIImage {
-        let buddy = builder.build()
-        var renderer = BuddyRenderer()
-        renderer.backgroundColor = UIColor(builder.backgroundColor)
-        return renderer.render(buddy)
     }
 }
