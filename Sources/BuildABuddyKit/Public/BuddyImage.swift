@@ -6,7 +6,7 @@ public struct BuddyImage: View {
 
     /// Creates a `BuddyImage` given a buddy.
     /// - Parameter buddy: The buddy to display.
-    public init(buddy: Buddy) {
+    public init(_ buddy: Buddy) {
         self.buddy = buddy
     }
 
