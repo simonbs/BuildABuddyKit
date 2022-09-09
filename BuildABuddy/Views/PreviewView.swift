@@ -17,7 +17,7 @@ struct PreviewView: View {
             ZStack {
                 Image("PreviewBackground")
                 builder.backgroundColor
-                BuddyImage(buddy: builder.build())
+                BuddyImage(builder.build())
             }.frame(width: 200, height: 200)
             Spacer()
         }
