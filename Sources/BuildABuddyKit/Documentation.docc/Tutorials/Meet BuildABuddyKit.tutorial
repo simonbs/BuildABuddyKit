@@ -13,4 +13,14 @@
         @TutorialReference(tutorial: "doc:Customizing-a-Buddy")
         @TutorialReference(tutorial: "doc:Rendering-a-Buddy-to-an-Image")
     }
+    
+    @Resources {
+        Explore more resources for learning about BuildABuddyKit.
+        
+        @SampleCode {
+            Download Build a Buddy, an example app that uses the BuildABuddyKit package.
+            
+            - [Download Build a Buddy](https://github.com/simonbs/BuildABuddyKit)
+        }
+    }
 }
