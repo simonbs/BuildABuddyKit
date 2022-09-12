@@ -1,0 +1,135 @@
+@Tutorial(time: 10) {
+    @Intro(title: "Writing the First Documentation") {
+        This tutorial will guite you through building the documentation, documenting your first type, and adding some structure to the type.
+    }
+    
+    @Section(title: "Building the documentation") {
+        @ContentAndMedia {
+            DocC documentation is built from your source code and optionally some Markdown files.
+        }
+        
+        @Steps {
+            @Step {
+                Checkout the `step-1` branch in the Git repository.
+                
+                @Image(source: 01-writing-the-first-documentation-01-01.png, alt: "Screenshot of Terminal showing the step-1 branch being checked out.")
+            }
+            
+            @Step {
+                Select Product > Build Documentation in the menu bar.
+                
+                > Tip: You can also press ⌃⇧⌘D to build the documentation.
+                
+                @Image(source: 01-writing-the-first-documentation-01-02.png, alt: "Screenshot of the menu bar with Product and Build Documentation highlighted.")
+            }
+            
+            @Step {
+                A window containing the documentation should appear. Select BuildABuddyKit under "Workspace Documentation" to view your documentation.
+                
+                > Tip: Spend a minute browsing the documentation. Notice that all the public types in the BuildABuddyKit package are included in the documentation but none of them are accomodated by text.  This documentation is similar to when Apple's documentation shows "No overview available".
+                
+                @Image(source: 01-writing-the-first-documentation-01-03.png, alt: "Screenshot of the window containing the documentation with the table of contents for BuildABuddyKit highlighted.")
+            }
+        }
+    }
+        
+    @Section(title: "Adding descriptions to types") {
+        @ContentAndMedia {
+            We've built the documentation but it's lacking descriptions of types, functions, and properties.
+            
+            The DocC documentation compiler converts Markdown-based text into rich documentation, so we will use Markdown to document our functions.
+            
+            > Info: Don't worry. You won't have to document all types in BuildABuddyKit.
+            
+            > Tip: With the exception of step 4, this section describes how documentation is written for symbols (types, properties, and functions). Feel free to skip this section if you're already familiar with this and if you're mostly interested in syntax specific to DocC.
+        }
+            
+        @Steps {
+            @Step {
+                Select BuddyRenderer.swift in the Project navigator.
+                
+                We'll add documentation to the BuddyRenderer type. This type takes an instance of Buddy as input and outputs and image.
+                                
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-02-01.swift)
+            }
+            
+            @Step {
+                Add a summary to the documentation.
+                
+                The first line in your documentation is treated as the summary which is shown below the type name. The summary should be kept short and concise.
+                
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-02-02.swift) {
+                    @Image(source: 01-writing-the-first-documentation-02-01.png, alt: "Screenshot of the documentation of BuddyRenderer with the summary highlighted.")
+                }
+            }
+            
+            @Step {
+                Add an overview to the type.
+                
+                Lines following the summary is treated as the description. The overview can be long and detailed.
+                
+                > Tip: Notice that the overview contains backticks. The overview is written in Markdown and can contain code, links, images, tables, and lists. We will have a closer look at some of these later.
+                
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-02-03.swift) {
+                    @Image(source: 01-writing-the-first-documentation-02-02.png, alt: "Screenshot of the documentation of BuddyRenderer with the overview highlighted.")
+                }
+            }
+            
+            @Step {
+                Replace \`Buddy\` with `<doc:Buddy>`. This will make mentons of the Buddy type link to the documentation for `Buddy`.
+                
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-02-04.swift) {
+                    @Image(source: 01-writing-the-first-documentation-02-03.png, alt: "Screenshot of the documentation of BuddyRenderer with the overview highlighted.")
+                }
+            }
+            
+            @Step {
+                Add a code snippet showing users how to get started with the `BuddyRenderer`.
+                
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-02-05.swift) {
+                    @Image(source: 01-writing-the-first-documentation-02-04.png, alt: "Screenshot of the documentation of BuddyRenderer with code snippet highlighted.")
+                }
+            }
+            
+            @Step {
+                Add a summary and a description to the two instance properties.
+                
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-02-06.swift) {
+                    @Image(source: 01-writing-the-first-documentation-02-05.png, alt: "Screenshot of the documentation of BuddyRenderer with the summary for the two instance properties highlighted.")
+                }
+            }
+            
+            @Step {
+                Place the cursor on top of the initializer. Then select Editor > Structure > Add Documentation. This will generate template documentation for the function.
+                
+                > Tip: You can also press ⌥⌘/ to add documentation. 
+                
+                @Image(source: 01-writing-the-first-documentation-02-06.png, alt: "Screenshot of the menu bar showing the Editor, Structure, and Add Documentation menu items highlighted,.")
+            }
+            
+            @Step {
+                After generating the documentation, you should be able to select the placeholders and fill out the summary and description of the parameters. See the next step for suggested texts.
+                
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-02-07.swift) {
+                    @Image(source: 01-writing-the-first-documentation-02-07.png, alt: "Screenshot of the menu bar showing the Editor, Structure, and Add Documentation menu items highlighted,.")
+                }
+            }
+            
+            @Step {
+                Document the initializer by adding a summary and a description of the parameters.
+                
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-02-08.swift) {
+                    @Image(source: 01-writing-the-first-documentation-02-08.png, alt: "Screenshot of the documentation of BuddyRenderer with the summary for the initializer highlighted.")
+                }
+            }
+        
+            @Step {
+                Finally, add documentation to the `render(_:)` function.
+                
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-02-09.swift) {
+                    @Image(source: 01-writing-the-first-documentation-02-09.png, alt: "Screenshot of the documentation of the render-function on BuddyRenderer.")
+                }
+            }
+        }
+    }
+}
