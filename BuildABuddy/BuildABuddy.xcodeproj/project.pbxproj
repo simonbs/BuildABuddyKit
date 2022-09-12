@@ -35,7 +35,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7241931428C85FBD00B4579C /* LearningMaterial */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = LearningMaterial; sourceTree = "<group>"; };
 		727E1BB628C63FCA00C2AFC4 /* BuildABuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuildABuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		727E1BB928C63FCA00C2AFC4 /* BuildABuddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildABuddyApp.swift; sourceTree = "<group>"; };
 		727E1BBB28C63FCA00C2AFC4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -52,7 +51,8 @@
 		727E1BD628C640C800C2AFC4 /* Hair+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Hair+Helpers.swift"; sourceTree = "<group>"; };
 		727E1BD728C640C800C2AFC4 /* Shirt+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shirt+Helpers.swift"; sourceTree = "<group>"; };
 		727E1BD828C640C800C2AFC4 /* BuddyBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuddyBuilder.swift; sourceTree = "<group>"; };
-		72AF689828CE266A001AE43E /* BuildABuddyKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = BuildABuddyKit; sourceTree = "<group>"; };
+		728839E828CF01AA00257B67 /* LearningMaterial */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = LearningMaterial; path = ../LearningMaterial; sourceTree = "<group>"; };
+		728839E928CF01B400257B67 /* BuildABuddyKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = BuildABuddyKit; path = ..; sourceTree = "<group>"; };
 		72E60AFD28C74530009C25C7 /* NoseConfiguratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoseConfiguratorView.swift; sourceTree = "<group>"; };
 		72E60B0028C7459E009C25C7 /* MouthConfiguratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouthConfiguratorView.swift; sourceTree = "<group>"; };
 		72E60B0228C745B5009C25C7 /* HairConfiguratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairConfiguratorView.swift; sourceTree = "<group>"; };
@@ -109,8 +109,8 @@
 		727E1BC728C6408700C2AFC4 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				7241931428C85FBD00B4579C /* LearningMaterial */,
-				72AF689828CE266A001AE43E /* BuildABuddyKit */,
+				728839E828CF01AA00257B67 /* LearningMaterial */,
+				728839E928CF01B400257B67 /* BuildABuddyKit */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
