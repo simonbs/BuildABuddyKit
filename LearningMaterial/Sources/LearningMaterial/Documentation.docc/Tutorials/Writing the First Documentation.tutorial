@@ -1,6 +1,6 @@
 @Tutorial(time: 10) {
     @Intro(title: "Writing the First Documentation") {
-        This tutorial will guite you through building the documentation, documenting your first type, and adding some structure to the type.
+        This tutorial will guide you through building the documentation, documenting your first type, and adding some structure to the type.
     }
     
     @Section(title: "Building the documentation") {
