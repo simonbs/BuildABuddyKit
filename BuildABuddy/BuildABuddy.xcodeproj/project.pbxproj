@@ -31,7 +31,6 @@
 		72E60B0928C74604009C25C7 /* ShoesConfiguratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E60B0828C74604009C25C7 /* ShoesConfiguratorView.swift */; };
 		72E60B0B28C74639009C25C7 /* EyesConfiguratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E60B0A28C74639009C25C7 /* EyesConfiguratorView.swift */; };
 		72E60B0D28C76B0C009C25C7 /* Documentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = 72E60B0C28C76B0C009C25C7 /* Documentation.docc */; };
-		72E7BADA28C8641200EB1743 /* LearningMaterial in Frameworks */ = {isa = PBXBuildFile; productRef = 72E7BAD928C8641200EB1743 /* LearningMaterial */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,7 +50,6 @@
 		727E1BD628C640C800C2AFC4 /* Hair+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Hair+Helpers.swift"; sourceTree = "<group>"; };
 		727E1BD728C640C800C2AFC4 /* Shirt+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shirt+Helpers.swift"; sourceTree = "<group>"; };
 		727E1BD828C640C800C2AFC4 /* BuddyBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuddyBuilder.swift; sourceTree = "<group>"; };
-		728839E828CF01AA00257B67 /* LearningMaterial */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = LearningMaterial; path = ../LearningMaterial; sourceTree = "<group>"; };
 		728839E928CF01B400257B67 /* BuildABuddyKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = BuildABuddyKit; path = ..; sourceTree = "<group>"; };
 		72E60AFD28C74530009C25C7 /* NoseConfiguratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoseConfiguratorView.swift; sourceTree = "<group>"; };
 		72E60B0028C7459E009C25C7 /* MouthConfiguratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouthConfiguratorView.swift; sourceTree = "<group>"; };
@@ -69,7 +67,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				727E1BCB28C640A400C2AFC4 /* BuildABuddyKit in Frameworks */,
-				72E7BADA28C8641200EB1743 /* LearningMaterial in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,7 +106,6 @@
 		727E1BC728C6408700C2AFC4 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				728839E828CF01AA00257B67 /* LearningMaterial */,
 				728839E928CF01B400257B67 /* BuildABuddyKit */,
 			);
 			name = Packages;
@@ -182,7 +178,6 @@
 			name = BuildABuddy;
 			packageProductDependencies = (
 				727E1BCA28C640A400C2AFC4 /* BuildABuddyKit */,
-				72E7BAD928C8641200EB1743 /* LearningMaterial */,
 			);
 			productName = BuildABuddy;
 			productReference = 727E1BB628C63FCA00C2AFC4 /* BuildABuddy.app */;
@@ -464,10 +459,6 @@
 		727E1BCA28C640A400C2AFC4 /* BuildABuddyKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = BuildABuddyKit;
-		};
-		72E7BAD928C8641200EB1743 /* LearningMaterial */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = LearningMaterial;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
