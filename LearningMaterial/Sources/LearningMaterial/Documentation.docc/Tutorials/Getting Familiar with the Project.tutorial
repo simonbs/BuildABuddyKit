@@ -1,0 +1,104 @@
+@Tutorial(time: 10) {
+    @Intro(title: "Getting Familiar with the Example Project") {
+        This tuturial will guite you through downloading the example project and getting familiar with it.
+        
+        The example project consists of the following two targets:
+        
+        - BuildABuddyKit: A framework for customizing characters ("buddies") and rendering them to an image.
+        - Build a Buddy: An example app that uses the BuildABuddyKit.
+        
+        Throughout this series of tutorials you'll be tasked with documenting the BuildABuddyKit package in DocC. Don't worry -- you won't have to write the entire documentation. Most of the framework is documented and you'll only need to fill in the blanks, and as you do so, you'll get hands-on experience with several concepts of DocC.
+        
+        By the way! All the learning material is written in DocC 😃
+    }
+    
+    @Section(title: "Cloning the example project") {
+        @ContentAndMedia {
+            Clone the example project using Git.
+        }
+        
+        @Steps {
+            @Step {
+                Open https://github.com/simonbs/BuildABuddyKit
+                
+                @Image(source: 01-getting-familiar-with-the-project-01-01.png, alt: "Screenshot of GitHub showing the BuildABuddyKit repository.")
+            }
+            
+            @Step {
+                Select Code and copy the URL to clone the repository.
+                
+                @Image(source: 01-getting-familiar-with-the-project-01-02.png, alt: "Screenshot of GitHub showing the BuildABuddyKit repository with the \"Download ZIP\" highlighted.")
+            }
+            
+            @Step {
+                Clone the repository using your Git client, for example Terminal, [Fork](https://git-fork.com), [GitTower](https://www.git-tower.com/mac), or similar.
+                
+                @Image(source: 01-getting-familiar-with-the-project-01-03.png, alt: "Screenshot of Terminal cloning the repository.")
+            }
+        }
+    }
+        
+    @Section(title: "Understand the project structure") {
+        @ContentAndMedia {
+            Get familiar with the structure of the project. 
+            
+            If you're familiar with Xcode and common project structures, you can skip this section.
+        }
+            
+        @Steps {
+            @Step {
+                Open the folder BuildABuddyKit folder that was cloned previously.  The root of the folder contains the BuildABuddyKit framework with the source files located in the `Sources` folder. The `BuildABuddy` folder contains the example project that uses the framework and the `LearningMaterial` contains the learning material you're reading now.
+                
+                @Image(source: 01-getting-familiar-with-the-project-02-01.png, alt: "Screenshot of Finder showing the contents of the BuildABuddyKit folder with the BuildABuddy, LearningMaterial, and Sources folders highlighted.")
+            }
+            
+            @Step {
+                Open the `BuildABuddy` folder and double-click `BuildABuddy.xcodeproj` project to open it in Xcode.
+                
+                @Image(source: 01-getting-familiar-with-the-project-02-02.png, alt: "Screenshot of Finder showing the contents of the BuildABuddy folder with the BuildABuddy.xcodeproj file highlighted.")
+            }
+            
+            @Step {
+                The BuildABuddyKit package contains the source code and resources for the framework that we will document.  This is where we will be doing most of our work.
+                
+                @Image(source: 01-getting-familiar-with-the-project-02-03.png, alt: "Screenshot of Xcode showing with BuildABuddy.xcodeproj open. The contents of the BuildABuddyKit package is highlighted.")
+            }
+            
+            @Step {
+                The BuildABuddy folder contains the source code, resources, and documentation for the example app that uses the BuildABuddyKit framework.
+                
+                @Image(source: 01-getting-familiar-with-the-project-02-04.png, alt: "Screenshot of Xcode showing with BuildABuddy.xcodeproj open. The contents of the BuildABuddy folder is highlighted.")
+            }
+        }
+    }
+        
+    @Section(title: "Run the example project") {
+        @ContentAndMedia {
+            Get a better understanding of the functionality of BuildABuddyKit by running the app in the simulator.
+        }
+            
+        @Steps {
+            @Step {
+                Ensure the BuildABuddy scheme and an iPhone simulator is selected. Then select the Play button to run the example app in the simulator.
+                
+                @Image(source: 01-getting-familiar-with-the-project-03-01.png, alt: "Screenshot of Xcode showing with BuildABuddy.xcodeproj open. The scheme picker, Run Destination picker, and the Plauy button are highlighted.")
+            }
+            
+            @Step {
+                The iPhone simulator should launch and then run the Build a Buddy app.
+                
+                > Important: The initial character is chosen at random, and as such, the character showing in your simulator may be different from the one in the screenshot on the right.
+                
+                @Image(source: 01-getting-familiar-with-the-project-03-02.png, alt: "Screenshot of the iPhone simulator showing the Build a Buddy app.")
+            }
+            
+            @Step {
+                Finally, play around with the example app to get an idea of what the BuildABuddyKit framework can do. For example, you can change the shirt your buddy is wearing.
+                
+                > Warning: The app is highly addictive! Don't spend too much time playing around with it. Otherwise you won't have time to write documentation 😃
+                
+                @Image(source: 01-getting-familiar-with-the-project-03-03.png, alt: "Screenshot of the iPhone simulator showing the Build a Buddy app and the shirt of the buddy being configured.")
+            }
+        }
+    }
+}
