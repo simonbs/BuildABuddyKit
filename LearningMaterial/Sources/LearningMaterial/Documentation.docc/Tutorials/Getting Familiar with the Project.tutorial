@@ -1,6 +1,6 @@
 @Tutorial(time: 10) {
     @Intro(title: "Getting Familiar with the Example Project") {
-        This tuturial will guite you through downloading the example project and getting familiar with it.
+        This tuturial will guide you through downloading the example project and getting familiar with it.
         
         The example project consists of the following two targets:
         
