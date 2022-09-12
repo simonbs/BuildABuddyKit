@@ -1,0 +1,31 @@
+@Tutorial(time: 10) {
+    @Intro(title: "Adding Structure to Documentation") {
+        In the previous section we learned how documentation can be written for types, properties, and functions. In this tutorial we will explore how we can add structure to our documentation.
+    }
+    
+    @Section(title: "Adding a documentation catalog") {
+        @ContentAndMedia {
+            Documentation catalogs are used when you want to enrich documentation generated from the symbols with images, videos, a landing page, structure, and tutorials.
+        }
+        
+        @Steps {
+            @Step {
+                Checkout the `step-2` branch in the Git repository.
+                
+                @Image(source: 01-adding-structure-to-documentation-01-01.png, alt: "Screenshot of Terminal showing the step-2 branch being checked out.")
+            }
+            
+            @Step {
+                Right-click BuildABuddyKit in the Project navigator and select New File...
+                
+                @Image(source: 01-adding-structure-to-documentation-01-02.png, alt: "Screenshot of the Project navigator in Xcode showing BuildABuddyKit is right-clicked and with the New File... menu item highlighted.")
+            }
+            
+            @Step {
+                Choose Documentation Catalog in the Template picker.
+                
+                @Image(source: 01-adding-structure-to-documentation-01-03.png, alt: "Screenshot of the Project navigator in Xcode showing BuildABuddyKit is right-clicked and with the New File... menu item highlighted.")
+            }
+        }
+    }
+}

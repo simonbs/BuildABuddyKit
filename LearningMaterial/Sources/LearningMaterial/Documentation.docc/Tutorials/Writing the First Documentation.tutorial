@@ -33,22 +33,22 @@
         }
     }
         
-    @Section(title: "Adding descriptions to types") {
+    @Section(title: "Documenting symbols") {
         @ContentAndMedia {
-            We've built the documentation but it's lacking descriptions of types, functions, and properties.
+            We have built the documentation but it is lacking descriptions of symbols, such as types, properties, and functions.
             
             The DocC documentation compiler converts Markdown-based text into rich documentation, so we will use Markdown to document our functions.
             
-            > Info: Don't worry. You won't have to document all types in BuildABuddyKit.
+            > Info: Do not worry. You will not have to document all types in BuildABuddyKit.
             
-            > Tip: With the exception of step 4, this section describes how documentation is written for symbols (types, properties, and functions). Feel free to skip this section if you're already familiar with this and if you're mostly interested in syntax specific to DocC.
+            > Tip: With the exception of step 4, this section describes how documentation is written for symbols (types, properties, and functions). Feel free to skip this section if you are already familiar with this and if you are mostly interested in syntax specific to DocC.
         }
             
         @Steps {
             @Step {
                 Select BuddyRenderer.swift in the Project navigator.
                 
-                We'll add documentation to the BuddyRenderer type. This type takes an instance of Buddy as input and outputs and image.
+                We will add documentation to the BuddyRenderer type. This type takes an instance of Buddy as input and outputs and image.
                                 
                 @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-02-01.swift)
             }
@@ -57,6 +57,8 @@
                 Add a summary to the documentation.
                 
                 The first line in your documentation is treated as the summary which is shown below the type name. The summary should be kept short and concise.
+                
+                > Tip: You can copy and paste the documentation from the source code on the right-hand side.
                 
                 @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-02-02.swift) {
                     @Image(source: 01-writing-the-first-documentation-02-01.png, alt: "Screenshot of the documentation of BuddyRenderer with the summary highlighted.")
