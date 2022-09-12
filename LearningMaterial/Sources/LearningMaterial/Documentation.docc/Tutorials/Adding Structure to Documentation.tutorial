@@ -22,7 +22,7 @@
             }
             
             @Step {
-                Choose Documentation Catalog in the Template picker.
+                Choose Documentation Catalog in the Template picker and select Next.
                 
                 @Image(source: 01-adding-structure-to-documentation-01-03.png, alt: "Screenshot of the Project navigator in Xcode showing BuildABuddyKit is right-clicked and with the New File... menu item highlighted.")
             }
