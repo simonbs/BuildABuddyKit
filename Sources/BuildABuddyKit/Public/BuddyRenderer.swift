@@ -31,6 +31,9 @@ public struct BuddyRenderer {
     }
 
     /// Renders the given buddy.
+    ///
+    /// Takes an instance of <doc:Buddy> as input and renders it to the image. The size and background color of the image is specified by <doc:canvasSize> and <doc:backgroundColor>.
+    ///
     /// - Parameter buddy: The buddy to render.
     /// - Returns: A UIImage representation of the rendered image.
     public func render(_ buddy: Buddy) -> UIImage {
