@@ -47,7 +47,7 @@
             
         @Steps {
             @Step {
-                Open the folder BuildABuddyKit folder that was cloned previously.  The root of the folder contains the BuildABuddyKit framework with the source files located in the `Sources` folder. The `BuildABuddy` folder contains the example project that uses the framework and the `LearningMaterial` contains the learning material you're reading now.
+                Open the BuildABuddyKit folder that was cloned previously.  The root of the folder contains the BuildABuddyKit framework with the source files located in the `Sources` folder. The `BuildABuddy` folder contains the example project that uses the framework and the `LearningMaterial` contains the learning material you're reading now.
                 
                 @Image(source: 01-getting-familiar-with-the-project-02-01.png, alt: "Screenshot of Finder showing the contents of the BuildABuddyKit folder with the BuildABuddy, LearningMaterial, and Sources folders highlighted.")
             }
