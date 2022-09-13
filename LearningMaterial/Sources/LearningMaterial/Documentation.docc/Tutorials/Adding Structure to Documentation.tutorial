@@ -1,6 +1,10 @@
 @Tutorial(time: 10) {
     @Intro(title: "Adding Structure to Documentation") {
         In the previous section we learned how documentation can be written for types, properties, and functions. In this tutorial we will explore how we can add structure to our documentation.
+        
+        Apple's documentation often group symbols by their use case. For example, the [documentation for WeatherKit](https://developer.apple.com/documentation/WeatherKit) has symbols grouped into the topics "Fundamentals", "Requests", "Alerts and forecasts", and much more. This is in contrast to our documentation which currently groups symbols by their type, such as "Structures" and "Enumerations". 
+        
+        This tutorial will guide you through grouping symbols by their use case.
     }
     
     @Section(title: "Adding a documentation catalog") {
@@ -25,6 +29,82 @@
                 Choose Documentation Catalog in the Template picker and select Next.
                 
                 @Image(source: 01-adding-structure-to-documentation-01-03.png, alt: "Screenshot of the Project navigator in Xcode showing BuildABuddyKit is right-clicked and with the New File... menu item highlighted.")
+            }
+            
+            @Step {
+                You should see three new items in the Project navigator. There is the Documentation catalog which countains `Documentation.md` and a folder named `Resources`. The `Documentation.md` file is the landing page for our documentation and we will eventually store images in the `Resources` folder. 
+                
+                @Image(source: 01-adding-structure-to-documentation-01-04.png, alt: "Screenshot of the Project navigator in Xcode with the Documentation catalog and the files in it highlighted.")
+            }
+        }
+    }
+        
+    @Section(title: "Adding a landing page") {
+        @ContentAndMedia {
+            The landing page is usually the first part of your documentation that people see. It should give an overview of the functionality of your package or app. 
+        }
+        
+        @Steps {
+            @Step {
+                Select `Documentation.md` in the Project navigator.
+                
+                @Code(name: "Documentation.md", file: 01-adding-structure-to-documentation-02-01.swift) {
+                    @Image(source: 01-adding-structure-to-documentation-02-01.png, alt: "Screenshot of the editor in Xcode showing the Documentation.md file with the placeholders.")
+                }
+            }
+            
+            @Step {
+                Add the title of your landing page.
+                
+                > Warning: For the DocC compiler to pick up your landing page, the title must be the exact same as the name of your package or app.
+                
+                @Code(name: "Documentation.md", file: 01-adding-structure-to-documentation-02-02.swift) {
+                    @Image(source: 01-adding-structure-to-documentation-02-02.png, alt: "Screenshot of the Developer Documentation window in Xcode showing the documentation of BuildABuddyKit.")
+                }
+            }
+            
+            @Step {
+                Add a short and concise summary of the framework.
+                
+                @Code(name: "Documentation.md", file: 01-adding-structure-to-documentation-02-03.swift) {
+                    @Image(source: 01-adding-structure-to-documentation-02-03.png, alt: "Screenshot of the landing page with the summary highlighted.")
+                }
+            }
+            
+            @Step {
+                Add a longer description of the framework.
+                
+                @Code(name: "Documentation.md", file: 01-adding-structure-to-documentation-02-04.swift) {
+                    @Image(source: 01-adding-structure-to-documentation-02-04.png, alt: "Screenshot of the landing page with the description highlighted.")
+                }
+            }
+            
+            @Step {
+                Add the use cases for the framework under `Topics`. There are two use cases for BuildABuddyKit: customizing a buddy and displaying it.
+                
+                > Info: The DocC compiler treats the `Topics` headline as a special case. Symbols, such as types, properties, and functions must be placed in the `Topics` section in order for DocC to generate proper symbol documentation.
+                
+                @Code(name: "Documentation.md", file: 01-adding-structure-to-documentation-02-05.swift) {
+                    @Image(source: 01-adding-structure-to-documentation-02-05.png, alt: "Screenshot of the Developer Documentation window in Xcode showing the documentation of BuildABuddyKit.")
+                }
+            }
+            
+            @Step {
+                Add another topic titled Essentials. This will display the most essential types for getting started with the framework.
+                
+                @Code(name: "Documentation.md", file: 01-adding-structure-to-documentation-02-06.swift) {
+                    @Image(source: 01-adding-structure-to-documentation-02-05.png, alt: "Screenshot of the Developer Documentation window in Xcode showing the documentation of BuildABuddyKit.")
+                }
+            }
+            
+            @Step {
+                Finally, add all the types under their respective section.
+                
+                > Info: DocC will recognize symbols between double backticks as references to symbols in the framework or app.
+                
+                @Code(name: "Documentation.md", file: 01-adding-structure-to-documentation-02-07.swift) {
+                    @Image(source: 01-adding-structure-to-documentation-02-06.png, alt: "Screenshot of the Developer Documentation window in Xcode showing the documentation of BuildABuddyKit.")
+                }
             }
         }
     }
