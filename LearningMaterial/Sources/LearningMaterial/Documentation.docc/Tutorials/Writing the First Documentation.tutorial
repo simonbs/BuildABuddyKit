@@ -76,7 +76,9 @@
             }
             
             @Step {
-                Replace \`Buddy\` with `<doc:Buddy>`. This will make mentons of the Buddy type link to the documentation for `Buddy`.
+                Replace \`Buddy\` with \`\`Buddy\`\`. This will make mentons of the `Buddy` type link to the documentation for `Buddy`.
+                
+                > Info: Double backticks (``) are used to refer to a symbol in the documentation. You can also use the alternative syntax `<doc:Buddy>`.
                 
                 @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-02-04.swift) {
                     @Image(source: 01-writing-the-first-documentation-02-03.png, alt: "Screenshot of the documentation of BuddyRenderer with the overview highlighted.")
