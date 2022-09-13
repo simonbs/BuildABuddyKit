@@ -6,38 +6,6 @@
         
         This tutorial will guide you through grouping symbols by their use case.
     }
-    
-    @Section(title: "Adding a documentation catalog") {
-        @ContentAndMedia {
-            Documentation catalogs are used when you want to enrich documentation generated from the symbols with images, videos, a landing page, structure, and tutorials.
-        }
-        
-        @Steps {
-            @Step {
-                Checkout the `step-2` branch in the Git repository.
-                
-                @Image(source: 01-adding-structure-to-documentation-01-01.png, alt: "Screenshot of Terminal showing the step-2 branch being checked out.")
-            }
-            
-            @Step {
-                Right-click BuildABuddyKit in the Project navigator and select New File...
-                
-                @Image(source: 01-adding-structure-to-documentation-01-02.png, alt: "Screenshot of the Project navigator in Xcode showing BuildABuddyKit is right-clicked and with the New File... menu item highlighted.")
-            }
-            
-            @Step {
-                Choose Documentation Catalog in the Template picker and select Next.
-                
-                @Image(source: 01-adding-structure-to-documentation-01-03.png, alt: "Screenshot of the Template picker in Xcode showing Documentation Catalog and the Next button as highlighted.")
-            }
-            
-            @Step {
-                You should see three new items in the Project navigator. There is the Documentation catalog which countains `Documentation.md` and a folder named `Resources`. The `Documentation.md` file is the landing page for our documentation and we will eventually store images in the `Resources` folder. 
-                
-                @Image(source: 01-adding-structure-to-documentation-01-04.png, alt: "Screenshot of the Project navigator in Xcode with the Documentation catalog and the files in it highlighted.")
-            }
-        }
-    }
         
     @Section(title: "Adding a landing page") {
         @ContentAndMedia {
@@ -46,7 +14,15 @@
         
         @Steps {
             @Step {
+                Checkout the `step-2` branch in the Git repository.
+                
+                @Image(source: 01-adding-structure-to-documentation-01-01.png, alt: "Screenshot of Terminal showing the step-2 branch being checked out.")
+            }
+
+            @Step {
                 Select `Documentation.md` in the Project navigator.
+                
+                This file resides inside the Documentation Catalog that we created in the <doc:Writing-the-First-Documentation> tutorial.
                 
                 @Code(name: "Documentation.md", file: 01-adding-structure-to-documentation-02-01.swift) {
                     @Image(source: 01-adding-structure-to-documentation-02-01.png, alt: "Screenshot of the editor in Xcode showing the Documentation.md file with the placeholders.")

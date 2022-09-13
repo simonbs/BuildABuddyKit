@@ -1,4 +1,4 @@
-@Tutorial(time: 10) {
+@Tutorial(time: 30) {
     @Intro(title: "Writing the First Documentation") {
         This tutorial will guide you through building the documentation, documenting your first type, and adding some structure to the type.
     }
@@ -126,10 +126,78 @@
             }
         
             @Step {
-                Finally, add documentation to the `render(_:)` function.
+                Add documentation to the `render(_:)` function.
                 
                 @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-02-09.swift) {
                     @Image(source: 01-writing-the-first-documentation-02-09.png, alt: "Screenshot of the documentation of the render-function on BuddyRenderer.")
+                }
+            }
+        }
+    }
+    
+    @Section(title: "Add an image") {
+        @ContentAndMedia {
+            We will add an image to the documentation of `BuddyRenderer` to give adopters of the framework an idea of the output they can expect when calling `-render(_:)`.
+            
+            Images used in the documentation are stored inside a documentation catalog. The catalog is also used when enriching documentation in other wasy, such as when adding a landing page, structure, tutorials, and more.
+            
+            We will look into other ways of enriching the documentation later in the tutorial but for now we will use the documentation catalog to store our image.
+        }
+        
+        @Steps {
+            @Step {
+                Start by adding the documentation catalog by right-clicking BuildABuddyKit in the Project navigator and selecting New File...
+                
+                @Image(source: 01-writing-the-first-documentation-03-01.png, alt: "Screenshot of the Project navigator in Xcode showing BuildABuddyKit is right-clicked and with the New File... menu item highlighted.")
+            }
+            
+            @Step {
+                Choose Documentation Catalog in the Template picker and select Next.
+                
+                @Image(source: 01-writing-the-first-documentation-03-02.png, alt: "Screenshot of the Template picker in Xcode showing Documentation Catalog and the Next button as highlighted.")
+            }
+            
+            @Step {
+                You should see three new items in the Project navigator. There is the Documentation catalog which contains `Documentation.md` and a folder named `Resources`. We will store our images in the `Resources` folder. We will have a closer look at `Documentation.md` in the <doc:Adding-Structure-to-Documentation> tutorial.
+                
+                @Image(source: 01-writing-the-first-documentation-03-03.png, alt: "Screenshot of the Project navigator in Xcode with the Documentation catalog and the files in it highlighted.")
+            }
+            
+            @Step {
+                Download [buddyrenderer-output-example.jpeg](https://github.com/simonbs/BuildABuddyKit/blob/main/Sources/BuildABuddyKit/Documentation.docc/Resources/buddyrenderer-output-example.jpeg) and [buddyrenderer-output-example~dark.jpeg](https://github.com/simonbs/BuildABuddyKit/blob/main/Sources/BuildABuddyKit/Documentation.docc/Resources/buddyrenderer-output-example%7Edark.jpeg). 
+                
+                These are the two images that we will add to the documentation. There is one image to be used in light mode and one to be used in dark mode.
+                
+                > Info: Filenames of images that are intended for dark mode should be suffixed with `~dark`, for example `xyz~dark.png`.
+                
+                @Image(source: 01-writing-the-first-documentation-03-04.png, alt: "Screenshot Safari with github.com open and showing one of the images. The Download button on the website is highlighted.")
+            }
+            
+            @Step {
+                Drag the two downloaded images into the `Resources` folder in Xcode.
+                
+                @Image(source: 01-writing-the-first-documentation-03-05.png, alt: "Screenshot of Xcode showing the images being dragged into the Resources folder.")
+            }
+            
+            @Step {
+                Select `BuddyRenderer.swift` in the Project navigator.
+                
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-02-09.swift)
+            }
+            
+            @Step {
+                Add a short informing users what the image depicts.
+                
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-02-10.swift)
+            }
+            
+            @Step {
+                Finally, add the image using Markdown syntax.
+                
+                > Info: Notice that we are not explicitly specifying the image to be used in dark mode. DocC will automatically chose whether to use the light or dark variant based on the naming scheme.
+                
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-02-11.swift) {
+                    @Image(source: 01-writing-the-first-documentation-03-06.png, alt: "Screenshot of the Developer Documentation showing the documentation of BuddyRenderer with the image of the character.")
                 }
             }
         }
