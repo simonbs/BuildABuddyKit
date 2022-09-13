@@ -41,8 +41,6 @@
     @Section(title: "Understand the project structure") {
         @ContentAndMedia {
             Get familiar with the structure of the project. 
-            
-            If you are familiar with Xcode and common project structures, you can skip this section.
         }
             
         @Steps {

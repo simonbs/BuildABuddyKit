@@ -40,8 +40,6 @@
             The DocC documentation compiler converts Markdown-based text into rich documentation, so we will use Markdown to document our functions.
             
             > Info: Do not worry. You will not have to document all types in BuildABuddyKit.
-            
-            > Tip: With the exception of step 4, this section describes how documentation is written for symbols (types, properties, and functions). Feel free to skip this section if you are already familiar with this and if you are mostly interested in syntax specific to DocC.
         }
             
         @Steps {
