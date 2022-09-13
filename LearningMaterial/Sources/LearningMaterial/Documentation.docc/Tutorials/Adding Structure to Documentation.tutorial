@@ -1,4 +1,4 @@
-@Tutorial(time: 10) {
+@Tutorial(time: 20) {
     @Intro(title: "Adding Structure to Documentation") {
         In the previous section we learned how documentation can be written for types, properties, and functions. In this tutorial we will explore how we can add structure to our documentation.
         
@@ -116,6 +116,8 @@
             It may not be necessary to manually structure the symbols for all types in your framework or app but you may want to do it for complex types or those that play a key role in your framework or app.
             
             Markdown files that specify the structure of single types are called _extensions_ when building documentation with DocC.
+            
+            In this section we will add an extension that improves the structure of the documentation of `BuddyRenderer`.
         }
             
         @Steps {
@@ -140,9 +142,57 @@
             }
             
             @Step {
-                Choose Empty in the Template picker and select Next.
+                Choose Extension in the Template picker and select Next.
                 
-                @Image(source: 01-adding-structure-to-documentation-01-03.png, alt: "Screenshot of the Template picker in Xcode showing Empty and the Next button as highlighted.")
+                @Image(source: 01-adding-structure-to-documentation-03-04.png, alt: "Screenshot of the Template picker in Xcode showing Extension and the Next button as highlighted.")
+            }
+            
+            @Step {
+                Name the file `BuddyRenderer.md` and select Create to save it in the Extensions folder.
+                
+                @Image(source: 01-adding-structure-to-documentation-03-05.png, alt: "Screenshot of the New File dialog with the filename and the Create button highlighted.")
+            }
+            
+            @Step {
+                Select `BuddyRenderer.md` in the Project navigator.
+                
+                @Code(name: "BuddyRenderer.md", file: 01-adding-structure-to-documentation-03-01.swift) {
+                    @Image(source: 01-adding-structure-to-documentation-03-06.png, alt: "Screenshot of the BuddyRenderer.md file as shown in Xcode with the placeholders.")
+                }
+            }
+            
+            @Step {
+                Replace the Symbol with the absolute path to `BuddyRenderer`. The absolute path is the target's product module name followed by the symbol name.
+                
+                > Important: Extensions must refer to the symbol using the absolute path.
+                
+                @Code(name: "BuddyRenderer.md", file: 01-adding-structure-to-documentation-03-02.swift) {
+                    @Image(source: 01-adding-structure-to-documentation-03-07.png, alt: "Screenshot of the Developer Documentation window in Xcode showing the documentation for BuddyRenderer.")
+                }
+            }
+            
+            @Step {
+                Remove the summary and overview as the summary and overview specified in the source file is sufficient for our needs.
+                
+                @Code(name: "BuddyRenderer.md", file: 01-adding-structure-to-documentation-03-03.swift) {
+                    @Image(source: 01-adding-structure-to-documentation-03-07.png, alt: "Screenshot of the Developer Documentation window in Xcode showing the documentation for BuddyRenderer.")
+                }
+            }
+            
+            @Step {
+                As with the landing page, start by creating the topic groups. 
+                
+                @Code(name: "BuddyRenderer.md", file: 01-adding-structure-to-documentation-03-04.swift) {
+                    @Image(source: 01-adding-structure-to-documentation-03-07.png, alt: "Screenshot of the Developer Documentation window in Xcode showing the documentation for BuddyRenderer.")
+                }
+            }
+            
+            @Step {
+                Finally, add the symbols for each topic group.
+                
+                @Code(name: "BuddyRenderer.md", file: 01-adding-structure-to-documentation-03-05.swift) {
+                    @Image(source: 01-adding-structure-to-documentation-03-08.png, alt: "Screenshot of the Developer Documentation window in Xcode showing the documentation for BuddyRenderer.")
+                }
             }
         }
     }
