@@ -11,6 +11,10 @@ import UIKit
 /// let renderer = BuddyRenderer(backgroundColor: .systemPurple)
 /// let image = renderer.render(buddy)
 /// ```
+///
+/// Here's an image produced by an instance of `BuddyRenderer`:
+///
+/// ![](buddyrenderer-output-example.jpeg)
 public struct BuddyRenderer {
     /// The background color of the rendered image.
     ///
