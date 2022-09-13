@@ -1,11 +1,11 @@
 import BuildABuddyKit
 import SwiftUI
 
-/// A view that contains controls for configuring a buddy.
+/// A view that contains controls for customizing a buddy.
 ///
-/// The view supports configuring the skin of the buddy and whether they should be waving or not. It also contains a setting to configure the background color of the exported image.
+/// The view supports customizing the skin of the buddy and whether they should be waving or not. It also contains a setting to configure the background color of the exported image.
 ///
-/// The view navigates to other views for configuring specific parts of the buddy, such as the hair, shirt, pants, and more.
+/// The view navigates to other views for customizing specific parts of the buddy, such as the hair, shirt, pants, and more.
 struct ConfiguratorView: View {
     /// An object containing the configuration of the buddy.
     @ObservedObject private var builder: BuddyBuilder

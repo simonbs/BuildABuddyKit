@@ -9,7 +9,7 @@ An app for building characters and exporting them as images.
 - ``BuildABuddyApp``
 - ``MainView``
 
-### Configurating a Buddy
+### Customizing a Buddy
 
 - ``BuddyBuilder``
 - ``ConfiguratorView``

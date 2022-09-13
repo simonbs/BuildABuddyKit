@@ -1,7 +1,7 @@
 import BuildABuddyKit
 import SwiftUI
 
-/// A view containing controls for configuring the pants of a buddy.
+/// A view containing controls for customizing the pants of a buddy.
 struct PantsConfiguratorView: View {
     /// An object containing the configuration of the buddy.
     @ObservedObject private var builder: BuddyBuilder

@@ -1,7 +1,7 @@
 import BuildABuddyKit
 import SwiftUI
 
-/// A view containing controls for configuring the mouth of a buddy.
+/// A view containing controls for customizing the mouth of a buddy.
 struct MouthConfiguratorView: View {
     /// An object containing the configuration of the buddy.
     @ObservedObject private var builder: BuddyBuilder
