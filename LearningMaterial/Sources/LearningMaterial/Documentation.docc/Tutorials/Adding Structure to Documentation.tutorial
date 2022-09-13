@@ -28,7 +28,7 @@
             @Step {
                 Choose Documentation Catalog in the Template picker and select Next.
                 
-                @Image(source: 01-adding-structure-to-documentation-01-03.png, alt: "Screenshot of the Project navigator in Xcode showing BuildABuddyKit is right-clicked and with the New File... menu item highlighted.")
+                @Image(source: 01-adding-structure-to-documentation-01-03.png, alt: "Screenshot of the Template picker in Xcode showing Documentation Catalog and the Next button as highlighted.")
             }
             
             @Step {
@@ -105,6 +105,44 @@
                 @Code(name: "Documentation.md", file: 01-adding-structure-to-documentation-02-07.swift) {
                     @Image(source: 01-adding-structure-to-documentation-02-06.png, alt: "Screenshot of the Developer Documentation window in Xcode showing the documentation of BuildABuddyKit.")
                 }
+            }
+        }
+    }
+        
+    @Section(title: "Adding an extension") {
+        @ContentAndMedia {
+            In the previous section we added structure to the documentation by grouping topics on the landing page. In this section we will add structure by grouping symbols of a type under topics that we manually define.
+            
+            It may not be necessary to manually structure the symbols for all types in your framework or app but you may want to do it for complex types or those that play a key role in your framework or app.
+            
+            Markdown files that specify the structure of single types are called _extensions_ when building documentation with DocC.
+        }
+            
+        @Steps {
+            @Step {
+                Right-click the Documentation folder and select New Folder.
+                
+                @Image(source: 01-adding-structure-to-documentation-03-01.png, alt: "Screenshot of Xcode after that user has performed a right-click on the Documentation folder. The Documentation folder and the New Folder menu item are highlighted.")
+            }
+            
+            @Step {
+                Name the folder Extensions. This folder will contain the extension we are writing.
+                
+                > Info: It is not necessary to store extensions in a separate folder named Extensions, however, it is common practice to do so.
+                
+                @Image(source: 01-adding-structure-to-documentation-03-02.png, alt: "Screenshot of Xcode showing a newly created folder being renamed to Extensions.")
+            }
+            
+            @Step {
+                Right-click the Extensions folder and select New File.
+                
+                @Image(source: 01-adding-structure-to-documentation-03-03.png, alt: "Screenshot of Xcode after that user has performed a right-click on the Extensions folder. The Extensions folder and the New File menu item are highlighted.")
+            }
+            
+            @Step {
+                Choose Empty in the Template picker and select Next.
+                
+                @Image(source: 01-adding-structure-to-documentation-01-03.png, alt: "Screenshot of the Template picker in Xcode showing Empty and the Next button as highlighted.")
             }
         }
     }
