@@ -1,6 +1,6 @@
-/// A buddy that can be rendered to an image using a <doc:BuddyRenderer>.
+/// A buddy that can be rendered to an image using a ``BuddyRenderer``.
 ///
-/// An instance of `Buddy` describes the appearance of that buddy, and as such, the image that <doc:BuddyRenderer/render(_:)> outputs.
+/// An instance of `Buddy` describes the appearance of that buddy, and as such, the image that ``BuddyRenderer/render(_:)`` outputs.
 ///
 /// Get started by creating an instance of `Buddy` and set the properties to customize the appearance.
 ///
@@ -49,7 +49,7 @@ public struct Buddy {
     public var shoes: Shoe
     /// The pose of the buddy.
     ///
-    /// The pose can be changed by calling <doc:stand()> and <doc:wave()>. Defaults to a standing pose.
+    /// The pose can be changed by calling ``stand()`` and ``wave()``. Defaults to a standing pose.
     private(set) var pose: Pose = .stand
 
     /// Create a `Buddy` given an appearance.

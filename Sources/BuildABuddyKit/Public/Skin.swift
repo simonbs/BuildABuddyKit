@@ -10,37 +10,37 @@ public enum Skin: CaseIterable {
     ///
     /// ![Preview of the skin tone](skin_tint_1.png)
     case tint1
-    /// A skin tone that is darker than <doc:tint1> and lighter than <doc:tint3>.
+    /// A skin tone that is darker than ``tint1`` and lighter than ``tint3``.
     ///
     /// See below for a preview of the skin tone.
     ///
     /// ![Preview of the skin tone](skin_tint_2.png)
     case tint2
-    /// A skin tone that is darker than <doc:tint2> and lighter than <doc:tint4>.
+    /// A skin tone that is darker than ``tint2`` and lighter than ``tint4``.
     ///
     /// See below for a preview of the skin tone.
     ///
     /// ![Preview of the skin tone](skin_tint_3.png)
     case tint3
-    /// A skin tone that is darker than <doc:tint3> and lighter than <doc:tint5>.
+    /// A skin tone that is darker than ``tint3`` and lighter than ``tint5``.
     ///
     /// See below for a preview of the skin tone.
     ///
     /// ![Preview of the skin tone](skin_tint_4.png)
     case tint4
-    /// A skin tone that is darker than <doc:tint4> and lighter than <doc:tint6>.
+    /// A skin tone that is darker than ``tint4`` and lighter than ``tint6``.
     ///
     /// See below for a preview of the skin tone.
     ///
     /// ![Preview of the skin tone](skin_tint_5.png)
     case tint5
-    /// A skin tone that is darker than <doc:tint5> and lighter than <doc:tint7>.
+    /// A skin tone that is darker than ``tint5`` and lighter than ``tint7``.
     ///
     /// See below for a preview of the skin tone.
     ///
     /// ![Preview of the skin tone](skin_tint_6.png)
     case tint6
-    /// A skin tone that is darker than <doc:tint6> and lighter than <doc:tint8>.
+    /// A skin tone that is darker than ``tint6`` and lighter than ``tint8``.
     ///
     /// See below for a preview of the skin tone.
     ///

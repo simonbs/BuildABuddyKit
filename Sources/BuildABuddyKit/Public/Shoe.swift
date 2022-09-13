@@ -2,7 +2,7 @@
 public struct Shoe {
     /// A style of shoe.
     ///
-    /// The shoe style determines the shape of the shoe. Refer to the <doc:Color-swift.enum> for the color of a shoe.
+    /// The shoe style determines the shape of the shoe. Refer to the ``Color-swift.enum`` for the color of a shoe.
     public enum Style: CaseIterable {
         /// A style of shoe with a curvy look.
         ///

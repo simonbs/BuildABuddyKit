@@ -2,7 +2,7 @@
 public struct Eyebrow {
     /// Style of an eyebrow.
     ///
-    /// The eyebrow style determines the shape of the eyebrow. Refer to the <doc:Color-swift.enum> for the color of an eyebrow.
+    /// The eyebrow style determines the shape of the eyebrow. Refer to the ``Color-swift.enum`` for the color of an eyebrow.
     public enum Style: CaseIterable {
         /// Style of an eyebrow.
         ///
