@@ -9,7 +9,7 @@ A framework for building customized characters and exporting them to images.
 
 The framework is meant for learning purposes and will serve as an example Swift package for the learning material presented at FrenchKit 2022.
 
-The learning material that guides the read through documenting BuildABuddyKit is available at [docc-lm.simonbs.dev/tutorials/table-of-contents](docc-lm.simonbs.dev/tutorials/table-of-contents)
+The learning material that guides the read through documenting BuildABuddyKit is available at [docc-lm.simonbs.dev/tutorials/table-of-contents](https://docc-lm.simonbs.dev/tutorials/table-of-contents)
 
 ### 📱 Example App
 
