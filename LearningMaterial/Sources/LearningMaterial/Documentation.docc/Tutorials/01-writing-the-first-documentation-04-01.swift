@@ -18,8 +18,6 @@ import UIKit
 /// Here's an image produced by an instance of `BuddyRenderer`:
 ///
 /// ![](buddyrenderer-output-example.jpeg)
-///
-/// > Warning: Providing a negative canvas size has undefined behavior.
 public struct BuddyRenderer {
     /// The background color of the rendered image.
     ///

@@ -1,6 +1,6 @@
 @Tutorial(time: 30) {
     @Intro(title: "Writing the First Documentation") {
-        This tutorial will guide you through building the documentation, documenting your first type, and adding some structure to the type.
+        This tutorial will guide you through building the documentation, documenting the symbols of a type, and adding images and asides to the documentation.
     }
     
     @Section(title: "Building the documentation") {
@@ -188,18 +188,50 @@
             @Step {
                 Add a short informing users what the image depicts.
                 
-                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-02-10.swift) {
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-03-01.swift) {
                     @Image(source: 01-writing-the-first-documentation-03-06.png, alt: "Screenshot of the Developer Documentation showing the documentation of BuddyRenderer.")
                 }
             }
             
             @Step {
-                Finally, add the image using Markdown syntax.
+                Add the image using Markdown syntax.
                 
                 > Info: Notice that we are not explicitly specifying the image to be used in dark mode. DocC will automatically chose whether to use the light or dark variant based on the naming scheme.
                 
-                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-02-11.swift) {
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-03-02.swift) {
                     @Image(source: 01-writing-the-first-documentation-03-07.png, alt: "Screenshot of the Developer Documentation showing the documentation of BuddyRenderer with the image of the character.")
+                }
+            }
+        }
+    }
+        
+    @Section(title: "Adding an aside") {
+        Asides are used to get a reader's attention and provide additional advice or warn about common errors and requisities.
+        
+        In this section we will use asides to provide additional information about the usage of `BuddyRenderer`.
+        
+        @Steps {
+            @Step {
+                Select `BuddyRenderer.swift` in the Project navigator.
+                
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-03-02.swift)
+            }
+            
+            @Step {
+                Add an aside of type `Note` to inform users about the default canvas size used by `BuddyRenderer` and the benefits of using the default size.
+                
+                Asides are created by starting a line with a greater-than symbol (`>`) followed by a space, the type of the aside, a colon (`:`), and the content of the aside. Valid types of asides are `Note`, `Important`, `Warning`, `Tip`, and `Experiment`. Each type are stylized uniquely.
+                
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-04-01.swift) {
+                    @Image(source: 01-writing-the-first-documentation-04-01.png, alt: "Screenshot of the Developer Documentation showing the documentation of BuddyRenderer with the note highlighted.")
+                }
+            }
+            
+            @Step {
+                Finally, add an aside of type `Warning` to warn users that creating a canvas with a negative size has undefined behavior.
+                
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-04-02.swift) {
+                    @Image(source: 01-writing-the-first-documentation-04-02.png, alt: "Screenshot of the Developer Documentation showing the documentation of BuddyRenderer with the warning highlighted.")
                 }
             }
         }
