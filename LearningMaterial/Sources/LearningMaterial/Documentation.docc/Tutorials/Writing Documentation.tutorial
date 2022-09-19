@@ -221,7 +221,7 @@
         }
     }
         
-    @Section(title: "Adding an aside") {
+    @Section(title: "Add an aside") {
         Asides are used to get a reader's attention and provide additional advice or warn about common errors and requisities.
         
         In this section we will use asides to provide additional information about the usage of `BuddyRenderer`.
