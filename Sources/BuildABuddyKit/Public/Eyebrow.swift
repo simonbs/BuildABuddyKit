@@ -100,7 +100,7 @@ public struct Eyebrow {
         self.color = color
     }
 
-    /// An eyeborw with a random style and a random color.
+    /// An eyebrow with a random style and a random color.
     public static var random: Self {
         return Self(style: .random, color: .random)
     }
