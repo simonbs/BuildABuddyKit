@@ -134,6 +134,8 @@
             @Step {
                 Add documentation to the `render(_:)` function.
                 
+                > Tip: Checkout the `step-3` branch and build the documentation to view the documentation for all symbols.
+                
                 @Code(name: "BuddyRenderer.swift", file: 01-writing-documentation-02-09.swift) {
                     @Image(source: 01-writing-documentation-02-09.png, alt: "Screenshot of the documentation of the render-function on BuddyRenderer.")
                 }
@@ -209,6 +211,8 @@
                 Add the image using Markdown syntax.
                 
                 > Info: Notice that we are not explicitly specifying the image to be used in dark mode. DocC will automatically chose whether to use the light or dark variant based on the naming scheme.
+                
+                > Tip: Checkout the `step-4` branch and build the documentation which includes images for several types. For example, the documentation of each case in the `Shirt.Front.Style` enum shows a preview of the shirt style.
                 
                 @Code(name: "BuddyRenderer.swift", file: 01-writing-documentation-03-02.swift) {
                     @Image(source: 01-writing-documentation-03-07.png, alt: "Screenshot of the Developer Documentation showing the documentation of BuddyRenderer with the image of the character.")
