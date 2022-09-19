@@ -236,4 +236,166 @@
             }
         }
     }
+    
+    @Assessments {
+        @MultipleChoice {
+            How can you build and view the DocC documentation from Xcode?
+            
+            @Choice(isCorrect: false) {
+                Selecting View > Documentation in the menu bar.
+                
+                @Justification(reaction: "Try again!") {
+                    Sorry, that is not correct.
+                }
+            }
+            
+            @Choice(isCorrect: false) {
+                Selecting Editor > View Documentation in the menu bar.
+                
+                @Justification(reaction: "Try again!") {
+                    Oops, that is not correct.
+                }
+            }
+            
+            @Choice(isCorrect: true) {
+                Selecting Product > Build Documentation in the menu bar.
+                
+                @Justification(reaction: "Correct!") {
+                    Correct! You can also press ⌃⇧⌘D to build the documentation.
+                }
+            }
+        }
+        
+        @MultipleChoice {
+            Can documentation of symbols contain syntax highlighted Swift code?
+            
+            @Choice(isCorrect: true) {
+                Yes, it can!
+                
+                @Justification(reaction: "Correct!") {
+                    Correct! DocC documentation can contain syntax highlighted Swift code and it is a great way to get people quickly started using your types.
+                }
+            }
+            
+            @Choice(isCorrect: false) {
+                No, it cannot and that's a bummer.
+                
+                @Justification(reaction: "Try again!") {
+                    Sorry, that is not correct. Hint: The other option is correct 🙊
+                }
+            }
+        }
+        
+        @MultipleChoice {
+            Which of the following syntaxes can we use linking to the documentaton of the `BuddyRenderer` type?
+            
+            @Choice(isCorrect: false) {
+                \`BuddyRenderer\`
+                
+                @Justification(reaction: "Try again!") {
+                    Unfortunately, that was not correct.
+                }
+            }
+            
+            @Choice(isCorrect: true) {
+                \`\`BuddyRenderer\`\`
+                
+                @Justification(reaction: "Correct!") {
+                    That's correct! We can also use `<doc:BuddyRenderer>` to link to a symbol.
+                }
+            }
+            
+            @Choice(isCorrect: false) {
+                \>BuddyRenderer\<
+                
+                @Justification(reaction: "Try again!") {
+                    Sorry, that is not correct.
+                }
+            }
+        }
+        
+        @MultipleChoice {
+            Which of the following is a correct filename for an image that is used in dark mode?
+            
+            @Choice(isCorrect: false) {
+                hero@dark.png
+                
+                @Justification(reaction: "Try again!") {
+                    Unfortunately, that was not correct.
+                }
+            }
+            
+            @Choice(isCorrect: false) {
+                hero-dark.png
+                
+                @Justification(reaction: "Correct!") {
+                    Ouch! That was not correct.
+                }
+            }
+            
+            @Choice(isCorrect: true) {
+                hero~dark.png
+                
+                @Justification(reaction: "Correct!") {
+                    Correct! DocC will automatically use images suffixed with `~dark` whemn viewing the documentation in darkmode.
+                }
+            }
+        }
+        
+        @MultipleChoice {
+            Which of these is the correct syntax to use when adding an aside?
+            
+            @Choice(isCorrect: false) {
+                `! Warning: Build a Buddy is highly addictive.`
+                
+                @Justification(reaction: "Try again!") {
+                    Unfortunately, that was not correct.
+                }
+            }
+            
+            @Choice(isCorrect: true) {
+                `> Warning: Build a Buddy is highly addictive.`
+                
+                @Justification(reaction: "Correct!") {
+                    That's correct! An aside is created by typing a greater-than symbol (`>`) followed by a space, the type of the aside, a colon (`:`), and the content of the aside.
+                }
+            }
+            
+            @Choice(isCorrect: false) {
+                `[Warning: Build a Buddy is highly addictive.]`
+                
+                @Justification(reaction: "Try again!") {
+                    Sorry, that is not correct.
+                }
+            }
+        }
+        
+        @MultipleChoice {
+            Which types of asides provide a unique style when creting an aside?
+            
+            @Choice(isCorrect: false) {
+                Note, Important, Alert, Help, and Experiment.
+                
+                @Justification(reaction: "Try again!") {
+                    Unfortunately, that was not correct.
+                }
+            }
+            
+            @Choice(isCorrect: false) {
+                Notice, Important, Warning, Hint, and Experiment.
+                
+                @Justification(reaction: "Try again!") {
+                    Oops, that is not correct.
+                }
+            }
+            
+            @Choice(isCorrect: true) {
+                Note, Important, Warning, Tip, and Experiment.
+                
+                @Justification(reaction: "Correct!") {
+                    That's correct! You can create asides of any type but other types than those listed here will fallback to the appearance of the Note type.
+                }
+            }
+        }
+    }
 }

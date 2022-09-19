@@ -172,4 +172,82 @@
             }
         }
     }
+
+    @Assessments {
+        @MultipleChoice {
+            What do we call Markdown files that specify symbol-specific structure?
+            
+            @Choice(isCorrect: false) {
+                Structure files.
+                
+                @Justification(reaction: "Try again.") {
+                    Sorry, that is not correct.
+                }
+            }
+            
+            @Choice(isCorrect: true) {
+                Extension files.
+                
+                @Justification(reaction: "Correct!") {
+                    That is correct!
+                }
+            }
+            
+            @Choice(isCorrect: false) {
+                Landing page files.
+                
+                @Justification(reaction: "Try again.") {
+                    Oops, that is not correct. The landing page is the frontpage of your documentaiton.
+                }
+            }
+        }
+        
+        @MultipleChoice {
+            What does `BuildABuddyKit/BuddyRenderer` denote?
+            
+            @Choice(isCorrect: false) {
+                The extension file should be used for path the landing page and the `BuddyRenderer` type.
+                
+                @Justification(reaction: "Try again.") {
+                    Sorry, that is not correct.
+                }
+            }
+            
+            @Choice(isCorrect: false) {
+                The `BuddyRenderer` type is nested under the `BuildABuddyKit` type.
+                
+                @Justification(reaction: "Try again.") {
+                    Sorry, that is not correct.
+                }
+            }
+            
+            @Choice(isCorrect: true) {
+                The absolute path of `BuddyRenderer`.
+                
+                @Justification(reaction: "Correct!") {
+                    That is correct! We use the absolute path when adding symbol-specific structure using extension files.
+                }
+            }
+        }
+        
+        @MultipleChoice {
+            Should groups of symbols be placed under a specific heading of landing pages and symbol-specific extension files?
+            
+            @Choice(isCorrect: false) {
+                No, they can be placed under any heading.
+                
+                @Justification(reaction: "Try again!") {
+                    Oops, that is not correct. Hint: The other option is correct 🙊
+                }
+            }
+            
+            @Choice(isCorrect: true) {
+                Yes, they must be placed under the Topics heading.
+                
+                @Justification(reaction: "Correct!") {
+                    That is correct!
+                }
+            }
+        }
+    }
 }

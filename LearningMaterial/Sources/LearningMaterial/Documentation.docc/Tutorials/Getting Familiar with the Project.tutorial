@@ -99,4 +99,62 @@
             }
         }
     }
+        
+    @Assessments {
+        @MultipleChoice {
+            What is the name of the package we will document throughout this series of tutorials?
+            
+            @Choice(isCorrect: false) {
+                BuddyKit
+                
+                @Justification(reaction: "Try again!") {
+                    Sorry, that is not correct. Remember that the purpose of the framework is to build buddies.
+                }
+            }
+            
+            @Choice(isCorrect: true) {
+                BuildABuddyKit
+                
+                @Justification(reaction: "Correct!") {
+                    That is correct!
+                }
+            }
+            
+            @Choice(isCorrect: false) {
+                BuddyBuilderKit
+                
+                @Justification(reaction: "Correct!") {
+                    Oops, that is not correct.
+                }
+            }
+        }
+        
+        @MultipleChoice {
+            What can developers do with the BuildABuddyKit framework?
+            
+            @Choice(isCorrect: false) {
+                Locate friends no matter where they are in the world.
+                
+                @Justification(reaction: "Try again!") {
+                    Sorry, that is not correct. Remember that the purpose of the framework is to build buddies.
+                }
+            }
+            
+            @Choice(isCorrect: false) {
+                Track and monitor vital aspects of their body, such as muscle mass and blood oxygen levels.
+                
+                @Justification(reaction: "Correct!") {
+                    Ouch, that is not correct.
+                }
+            }
+            
+            @Choice(isCorrect: true) {
+                Customize characters and render them to an image.
+                
+                @Justification(reaction: "Correct!") {
+                    That is correct! Those characters are also referred to as "buddies".
+                }
+            }
+        }
+    }
 }
