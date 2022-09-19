@@ -118,19 +118,11 @@ public struct Buddy {
     }
 
     /// Makes the buddy wave with one of their hands.
-    ///
-    /// See below for a preview of the pose.
-    ///
-    /// ![Preview of the pose](pose_wave.png)
     mutating public func wave() {
         pose = .wave
     }
 
     /// Makes the buddy stand still with their hands pointing downwards.
-    ///
-    /// See below for a preview of the pose.
-    ///
-    /// ![Preview of the pose](pose_stand.png)
     mutating public func stand() {
         pose = .stand
     }

@@ -7,52 +7,20 @@ public struct Shirt {
     /// This is used to specify the color of a ``Front-swift.struct`` and ``Sleeve``. The color of the front and sleeves can be specified individually.
     public enum Color: CaseIterable {
         /// Blue color.
-        ///
-        /// See below for a preview of the color.
-        ///
-        /// ![Preview of the color](shirt_color_blue.png)
         case blue
         /// Green color.
-        ///
-        /// See below for a preview of the color.
-        ///
-        /// ![Preview of the color](shirt_color_green.png)
         case green
         /// Grey color.
-        ///
-        /// See below for a preview of the color.
-        ///
-        /// ![Preview of the color](shirt_color_grey.png)
         case grey
         /// Navy color.
-        ///
-        /// See below for a preview of the color.
-        ///
-        /// ![Preview of the color](shirt_color_navy.png)
         case navy
         /// Pine color.
-        ///
-        /// See below for a preview of the color.
-        ///
-        /// ![Preview of the color](shirt_color_pine.png)
         case pine
         /// Red color.
-        ///
-        /// See below for a preview of the color.
-        ///
-        /// ![Preview of the color](shirt_color_red.png)
         case red
         /// White color.
-        ///
-        /// See below for a preview of the color.
-        ///
-        /// ![Preview of the color](shirt_color_white.png)
         case white
         /// Yellow color.
-        ///
-        /// See below for a preview of the color.
-        ///
-        /// ![Preview of the color](shirt_color_yellow.png)
         case yellow
 
         /// A random shirt color.
@@ -72,66 +40,34 @@ public struct Shirt {
             /// A plain shirt.
             ///
             /// This style is suited for a regular t-shirt.
-            ///
-            /// See below for a preview of the style.
-            ///
-            /// ![Preview of the style](shirt_style_1.png)
             case style1
             /// A shirt with the silhouette of a logo on the front.
             ///
             /// This style is suited for a regular t-shirt and tanktops.
-            ///
-            /// See below for a preview of the style.
-            ///
-            /// ![Preview of the style](shirt_style_2.png)
             case style2
             /// A shirt with a pocket on the front.
             ///
             /// This style is suited for formal shirts.
-            ///
-            /// See below for a preview of the style.
-            ///
-            /// ![Preview of the style](shirt_style_3.png)
             case style3
             /// A plain shirt.
             ///
             /// This style is suited for a regular t-shirt.
-            ///
-            /// See below for a preview of the style.
-            ///
-            /// ![Preview of the style](shirt_style_4.png)
             case style4
             /// A shirt with a collar.
             ///
             /// This style is suited for polos and formal shirts.
-            ///
-            /// See below for a preview of the style.
-            ///
-            /// ![Preview of the style](shirt_style_5.png)
             case style5
             /// A shirt with a zipper or buttons.
             ///
             /// This style is suited for hoodies and formal shirts.
-            ///
-            /// See below for a preview of the style.
-            ///
-            /// ![Preview of the style](shirt_style_6.png)
             case style6
             /// A shirt with a zipper or buttons and a front pocket.
             ///
             /// This style is suited for formal shirts.
-            ///
-            /// See below for a preview of the style.
-            ///
-            /// ![Preview of the style](shirt_style_7.png)
             case style7
             /// A plain shirt.
             ///
             /// This style is suited for a regular t-shirt.
-            ///
-            /// See below for a preview of the style.
-            ///
-            /// ![Preview of the style](shirt_style_8.png)
             case style8
 
             /// A random style for the front of a shirt.
@@ -164,22 +100,10 @@ public struct Shirt {
             /// Long sleeves.
             ///
             /// These sleeves are suitable for formal shirts, sweatshirts, hoodies, and more.
-            ///
-            /// See below for a preview of the sleeve.
-            ///
-            /// ![Preview of the length](shirt_sleeve_length_long.png)
             case long
             /// These sleeves are suitable for regular shirts and t-shirts.
-            ///
-            /// See below for a preview of the sleeve.
-            ///
-            /// ![Preview of the length](shirt_sleeve_length_short.png)
             case short
             /// These sleeves are suitable for t-shirts.
-            ///
-            /// See below for a preview of the sleeve.
-            ///
-            /// ![Preview of the length](shirt_sleeve_length_shorter.png)
             case shorter
 
             /// A random length of sleeves.
