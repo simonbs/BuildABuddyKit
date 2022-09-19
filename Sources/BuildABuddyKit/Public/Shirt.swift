@@ -4,7 +4,7 @@
 public struct Shirt {
     /// Color of a shirt.
     ///
-    /// This is used to specify the color of a ``Front-swift.struct`` and ``Sleeve``. The color of the front and sleeves can be specified individually-
+    /// This is used to specify the color of a ``Front-swift.struct`` and ``Sleeve``. The color of the front and sleeves can be specified individually.
     public enum Color: CaseIterable {
         /// Blue color.
         ///
