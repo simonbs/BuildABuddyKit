@@ -37,7 +37,9 @@
         @ContentAndMedia {
             We have built the documentation but it is lacking descriptions of symbols, such as types, properties, and functions.
             
-            The DocC documentation compiler converts Markdown-based text into rich documentation, so we will use Markdown to document our functions.
+            We can use a dialect of Markdown, _documentation markup_, to write our documentation. This dialect builds upon Markdown to add support for linking to symbols, asides, and much more.
+            
+            When building the documentation, the DocC compiler converts the Markdown into rich documentation.
             
             > Info: Do not worry. You will not have to document all types in BuildABuddyKit.
         }
@@ -289,6 +291,34 @@
         }
         
         @MultipleChoice {
+            Which language do we use to write documentation when using DocC?
+            
+            @Choice(isCorrect: true) {
+                Markdown
+                
+                @Justification(reaction: "Correct!") {
+                    That's correct! We use a custom dialect of Markdown which includes features like symbol linking, asides, and much more.
+                }
+            }
+            
+            @Choice(isCorrect: false) {
+                HTML
+                
+                @Justification(reaction: "Try again!") {
+                    Oops, that is not correct.
+                }
+            }
+            
+            @Choice(isCorrect: false) {
+                Swift
+                
+                @Justification(reaction: "Try again!") {
+                    Sorry, that is not correct.
+                }
+            }
+        }
+        
+        @MultipleChoice {
             Can documentation of symbols contain syntax highlighted Swift code?
             
             @Choice(isCorrect: true) {
@@ -350,7 +380,7 @@
             @Choice(isCorrect: false) {
                 hero-dark.png
                 
-                @Justification(reaction: "Correct!") {
+                @Justification(reaction: "Try again!") {
                     Ouch! That was not correct.
                 }
             }
