@@ -12,7 +12,7 @@
             @Step {
                 Checkout the `step-1` branch in the Git repository.
                 
-                @Image(source: 01-writing-documentation-01-01.png, alt: "Screenshot of Terminal showing the step-1 branch being checked out.")
+                @Image(source: tutorial-git-step-1.png, alt: "Screenshot of Terminal showing the step-1 branch being checked out.")
             }
             
             @Step {
@@ -43,6 +43,12 @@
         }
             
         @Steps {
+            @Step {
+                Checkout the `step-2` branch in the Git repository.
+                
+                @Image(source: tutorial-git-step-2.png, alt: "Screenshot of Terminal showing the step-2 branch being checked out.")
+            }
+
             @Step {
                 Select BuddyRenderer.swift in the Project navigator.
                 
@@ -146,6 +152,12 @@
         
         @Steps {
             @Step {
+                Checkout the `step-3` branch in the Git repository.
+                
+                @Image(source: tutorial-git-step-3.png, alt: "Screenshot of Terminal showing the step-3 branch being checked out.")
+            }
+
+            @Step {
                 Start by adding the documentation catalog by right-clicking BuildABuddyKit in the Project navigator and selecting New File...
                 
                 @Image(source: 01-writing-documentation-03-01.png, alt: "Screenshot of the Project navigator in Xcode showing BuildABuddyKit is right-clicked and with the New File... menu item highlighted.")
@@ -211,6 +223,12 @@
         In this section we will use asides to provide additional information about the usage of `BuddyRenderer`.
         
         @Steps {
+            @Step {
+                Checkout the `step-4` branch in the Git repository.
+                
+                @Image(source: tutorial-git-step-4.png, alt: "Screenshot of Terminal showing the step-4 branch being checked out.")
+            }
+
             @Step {
                 Select `BuddyRenderer.swift` in the Project navigator.
                 
