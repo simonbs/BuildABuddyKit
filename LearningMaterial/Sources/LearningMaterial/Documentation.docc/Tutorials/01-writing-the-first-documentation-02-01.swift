@@ -10,6 +10,7 @@ public struct BuddyRenderer {
     }
 
     public func render(_ buddy: Buddy) -> UIImage {
+        let scale = CGPoint(x: canvasSize.width / 600, y: canvasSize.height / 600)
         let format = UIGraphicsImageRendererFormat()
         format.scale = 1
         format.opaque = false
@@ -29,6 +30,7 @@ public struct BuddyRenderer {
                     // Rotate the image and then render the rotated image. This makes it easier to transfer values from Sketch to code.
                     let transformedImage = image.flipped(asset.flipped).rotated(by: asset.rotation)
                     cgContext.saveGState()
+                    cgContext.scaleBy(x: scale.x, y: scale.y)
                     transformedImage.draw(at: asset.position)
                     cgContext.restoreGState()
                 }

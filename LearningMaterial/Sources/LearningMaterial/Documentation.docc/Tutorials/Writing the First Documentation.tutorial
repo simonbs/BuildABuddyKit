@@ -76,7 +76,7 @@
             }
             
             @Step {
-                Replace \`Buddy\` with \`\`Buddy\`\`. This will make mentons of the `Buddy` type link to the documentation for `Buddy`.
+                Replace \`Buddy\` with \`\`Buddy\`\` and \`render(\_:)\` with \`\`render(\_:)\`\`. This will turn the type and function into links.
                 
                 > Info: Double backticks (``) are used to refer to a symbol in the documentation. You can also use the alternative syntax `<doc:Buddy>`.
                 
@@ -188,7 +188,9 @@
             @Step {
                 Add a short informing users what the image depicts.
                 
-                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-02-10.swift)
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-02-10.swift) {
+                    @Image(source: 01-writing-the-first-documentation-03-06.png, alt: "Screenshot of the Developer Documentation showing the documentation of BuddyRenderer.")
+                }
             }
             
             @Step {
@@ -197,7 +199,7 @@
                 > Info: Notice that we are not explicitly specifying the image to be used in dark mode. DocC will automatically chose whether to use the light or dark variant based on the naming scheme.
                 
                 @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-02-11.swift) {
-                    @Image(source: 01-writing-the-first-documentation-03-06.png, alt: "Screenshot of the Developer Documentation showing the documentation of BuddyRenderer with the image of the character.")
+                    @Image(source: 01-writing-the-first-documentation-03-07.png, alt: "Screenshot of the Developer Documentation showing the documentation of BuddyRenderer with the image of the character.")
                 }
             }
         }
