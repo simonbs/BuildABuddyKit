@@ -87,11 +87,11 @@
         
     @Section(title: "Adding an extension") {
         @ContentAndMedia {
-            In the previous section we added structure to the documentation by grouping topics on the landing page. In this section we will add structure by grouping symbols of a type under topics that we manually define.
+            In the previous section we added structure to the documentation by grouping topics on the landing page. In this section we will add structure by grouping symbols of a type.
             
-            It may not be necessary to manually structure the symbols for all types in your framework or app but you may want to do it for complex types or those that play a key role in your framework or app.
+            It may not be necessary to manually structure the symbols for all types but you may want to do it for complex types or those that play a key role in your framework or app.
             
-            Markdown files that specify the structure of single types are called _extensions_ when building documentation with DocC.
+            Markdown files that specify symbol-specific structure are  _extension files_ in DocC terms.
             
             In this section we will add an extension that improves the structure of the documentation of `BuddyRenderer`.
         }
