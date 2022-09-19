@@ -14,9 +14,9 @@
         
         @Steps {
             @Step {
-                Checkout the `step-2` branch in the Git repository.
+                Checkout the `step-5` branch in the Git repository.
                 
-                @Image(source: 01-adding-structure-to-documentation-01-01.png, alt: "Screenshot of Terminal showing the step-2 branch being checked out.")
+                @Image(source: tutorial-git-step-5.png, alt: "Screenshot of Terminal showing the step-5 branch being checked out.")
             }
 
             @Step {
@@ -97,6 +97,12 @@
         }
             
         @Steps {
+            @Step {
+                Checkout the `step-6` branch in the Git repository.
+                
+                @Image(source: tutorial-git-step-6.png, alt: "Screenshot of Terminal showing the step-6 branch being checked out.")
+            }
+
             @Step {
                 Right-click the Documentation folder and select New Folder.
                 
