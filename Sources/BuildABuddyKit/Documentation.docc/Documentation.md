@@ -1,33 +1,13 @@
-# ``BuildABuddyKit``
+# ````
 
-A framework for generating buddies.
+<!--@START_MENU_TOKEN@-->Summary<!--@END_MENU_TOKEN@-->
 
 ## Overview
 
-BuildABuddyKit is a framework for generating characters and exporting those as images.
-
-![A collection of buddies generated using the framework](hero.png)
+<!--@START_MENU_TOKEN@-->Text<!--@END_MENU_TOKEN@-->
 
 ## Topics
 
-### Essentials
+### <!--@START_MENU_TOKEN@-->Group<!--@END_MENU_TOKEN@-->
 
-- ``Buddy``
-
-### Customizing a Buddy
-
-- ``Skin``
-- ``Hair``
-- ``Eye``
-- ``Eyebrow``
-- ``Nose``
-- ``Mouth``
-- ``Shirt``
-- ``Pants``
-- ``Shoe``
-- ``Nose``
-
-### Displaying a Buddy
-
-- ``BuddyImage``
-- ``BuddyRenderer``
+- <!--@START_MENU_TOKEN@-->``Symbol``<!--@END_MENU_TOKEN@-->

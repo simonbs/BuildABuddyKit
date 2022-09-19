@@ -13,13 +13,9 @@ import UIKit
 /// let image = renderer.render(buddy)
 /// ```
 ///
-/// > Note: The default canvas size is 600 by 600. This canvas size provides for the best results.
-///
 /// Here's an image produced by an instance of `BuddyRenderer`:
 ///
 /// ![](buddyrenderer-output-example.jpeg)
-///
-/// > Warning: Providing a negative canvas size has undefined behavior.
 public struct BuddyRenderer {
     /// The background color of the rendered image.
     ///
