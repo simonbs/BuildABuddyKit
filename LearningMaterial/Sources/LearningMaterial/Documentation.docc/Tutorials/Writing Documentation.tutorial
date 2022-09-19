@@ -1,5 +1,5 @@
 @Tutorial(time: 30) {
-    @Intro(title: "Writing the First Documentation") {
+    @Intro(title: "Writing Documentation") {
         This tutorial will guide you through building the documentation, documenting the symbols of a type, and adding images and asides to the documentation.
     }
     
@@ -12,7 +12,7 @@
             @Step {
                 Checkout the `step-1` branch in the Git repository.
                 
-                @Image(source: 01-writing-the-first-documentation-01-01.png, alt: "Screenshot of Terminal showing the step-1 branch being checked out.")
+                @Image(source: 01-writing-documentation-01-01.png, alt: "Screenshot of Terminal showing the step-1 branch being checked out.")
             }
             
             @Step {
@@ -20,7 +20,7 @@
                 
                 > Tip: You can also press ⌃⇧⌘D to build the documentation.
                 
-                @Image(source: 01-writing-the-first-documentation-01-02.png, alt: "Screenshot of the menu bar with Product and Build Documentation highlighted.")
+                @Image(source: 01-writing-documentation-01-02.png, alt: "Screenshot of the menu bar with Product and Build Documentation highlighted.")
             }
             
             @Step {
@@ -28,7 +28,7 @@
                 
                 > Tip: Spend a minute browsing the documentation. Notice that all the public types in the BuildABuddyKit package are included in the documentation but none of them are accomodated by text.  This documentation is similar to when Apple's documentation shows "No overview available".
                 
-                @Image(source: 01-writing-the-first-documentation-01-03.png, alt: "Screenshot of the window containing the documentation with the table of contents for BuildABuddyKit highlighted.")
+                @Image(source: 01-writing-documentation-01-03.png, alt: "Screenshot of the window containing the documentation with the table of contents for BuildABuddyKit highlighted.")
             }
         }
     }
@@ -48,7 +48,7 @@
                 
                 We will add documentation to the BuddyRenderer type. This type takes an instance of Buddy as input and outputs and image.
                                 
-                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-02-01.swift)
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-documentation-02-01.swift)
             }
             
             @Step {
@@ -58,8 +58,8 @@
                 
                 > Tip: You can copy and paste the documentation from the source code on the right-hand side.
                 
-                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-02-02.swift) {
-                    @Image(source: 01-writing-the-first-documentation-02-01.png, alt: "Screenshot of the documentation of BuddyRenderer with the summary highlighted.")
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-documentation-02-02.swift) {
+                    @Image(source: 01-writing-documentation-02-01.png, alt: "Screenshot of the documentation of BuddyRenderer with the summary highlighted.")
                 }
             }
             
@@ -70,8 +70,8 @@
                 
                 > Tip: Notice that the overview contains backticks. The overview is written in Markdown and can contain code, links, images, tables, and lists. We will have a closer look at some of these later.
                 
-                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-02-03.swift) {
-                    @Image(source: 01-writing-the-first-documentation-02-02.png, alt: "Screenshot of the documentation of BuddyRenderer with the overview highlighted.")
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-documentation-02-03.swift) {
+                    @Image(source: 01-writing-documentation-02-02.png, alt: "Screenshot of the documentation of BuddyRenderer with the overview highlighted.")
                 }
             }
             
@@ -80,24 +80,24 @@
                 
                 > Info: Double backticks (``) are used to refer to a symbol in the documentation. You can also use the alternative syntax `<doc:Buddy>`.
                 
-                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-02-04.swift) {
-                    @Image(source: 01-writing-the-first-documentation-02-03.png, alt: "Screenshot of the documentation of BuddyRenderer with the overview highlighted.")
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-documentation-02-04.swift) {
+                    @Image(source: 01-writing-documentation-02-03.png, alt: "Screenshot of the documentation of BuddyRenderer with the overview highlighted.")
                 }
             }
             
             @Step {
                 Add a code snippet showing users how to get started with the `BuddyRenderer`.
                 
-                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-02-05.swift) {
-                    @Image(source: 01-writing-the-first-documentation-02-04.png, alt: "Screenshot of the documentation of BuddyRenderer with code snippet highlighted.")
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-documentation-02-05.swift) {
+                    @Image(source: 01-writing-documentation-02-04.png, alt: "Screenshot of the documentation of BuddyRenderer with code snippet highlighted.")
                 }
             }
             
             @Step {
                 Add a summary and a description to the two instance properties.
                 
-                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-02-06.swift) {
-                    @Image(source: 01-writing-the-first-documentation-02-05.png, alt: "Screenshot of the documentation of BuddyRenderer with the summary for the two instance properties highlighted.")
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-documentation-02-06.swift) {
+                    @Image(source: 01-writing-documentation-02-05.png, alt: "Screenshot of the documentation of BuddyRenderer with the summary for the two instance properties highlighted.")
                 }
             }
             
@@ -106,30 +106,30 @@
                 
                 > Tip: You can also press ⌥⌘/ to add documentation. 
                 
-                @Image(source: 01-writing-the-first-documentation-02-06.png, alt: "Screenshot of the menu bar showing the Editor, Structure, and Add Documentation menu items highlighted,.")
+                @Image(source: 01-writing-documentation-02-06.png, alt: "Screenshot of the menu bar showing the Editor, Structure, and Add Documentation menu items highlighted,.")
             }
             
             @Step {
                 After generating the documentation, you should be able to select the placeholders and fill out the summary and description of the parameters. See the next step for suggested texts.
                 
-                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-02-07.swift) {
-                    @Image(source: 01-writing-the-first-documentation-02-07.png, alt: "Screenshot of the menu bar showing the Editor, Structure, and Add Documentation menu items highlighted,.")
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-documentation-02-07.swift) {
+                    @Image(source: 01-writing-documentation-02-07.png, alt: "Screenshot of the menu bar showing the Editor, Structure, and Add Documentation menu items highlighted,.")
                 }
             }
             
             @Step {
                 Document the initializer by adding a summary and a description of the parameters.
                 
-                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-02-08.swift) {
-                    @Image(source: 01-writing-the-first-documentation-02-08.png, alt: "Screenshot of the documentation of BuddyRenderer with the summary for the initializer highlighted.")
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-documentation-02-08.swift) {
+                    @Image(source: 01-writing-documentation-02-08.png, alt: "Screenshot of the documentation of BuddyRenderer with the summary for the initializer highlighted.")
                 }
             }
         
             @Step {
                 Add documentation to the `render(_:)` function.
                 
-                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-02-09.swift) {
-                    @Image(source: 01-writing-the-first-documentation-02-09.png, alt: "Screenshot of the documentation of the render-function on BuddyRenderer.")
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-documentation-02-09.swift) {
+                    @Image(source: 01-writing-documentation-02-09.png, alt: "Screenshot of the documentation of the render-function on BuddyRenderer.")
                 }
             }
         }
@@ -148,19 +148,19 @@
             @Step {
                 Start by adding the documentation catalog by right-clicking BuildABuddyKit in the Project navigator and selecting New File...
                 
-                @Image(source: 01-writing-the-first-documentation-03-01.png, alt: "Screenshot of the Project navigator in Xcode showing BuildABuddyKit is right-clicked and with the New File... menu item highlighted.")
+                @Image(source: 01-writing-documentation-03-01.png, alt: "Screenshot of the Project navigator in Xcode showing BuildABuddyKit is right-clicked and with the New File... menu item highlighted.")
             }
             
             @Step {
                 Choose Documentation Catalog in the Template picker and select Next.
                 
-                @Image(source: 01-writing-the-first-documentation-03-02.png, alt: "Screenshot of the Template picker in Xcode showing Documentation Catalog and the Next button as highlighted.")
+                @Image(source: 01-writing-documentation-03-02.png, alt: "Screenshot of the Template picker in Xcode showing Documentation Catalog and the Next button as highlighted.")
             }
             
             @Step {
                 You should see three new items in the Project navigator. There is the Documentation catalog which contains `Documentation.md` and a folder named `Resources`. We will store our images in the `Resources` folder. We will have a closer look at `Documentation.md` in the <doc:Adding-Structure-to-Documentation> tutorial.
                 
-                @Image(source: 01-writing-the-first-documentation-03-03.png, alt: "Screenshot of the Project navigator in Xcode with the Documentation catalog and the files in it highlighted.")
+                @Image(source: 01-writing-documentation-03-03.png, alt: "Screenshot of the Project navigator in Xcode with the Documentation catalog and the files in it highlighted.")
             }
             
             @Step {
@@ -170,26 +170,26 @@
                 
                 > Info: Filenames of images that are intended for dark mode should be suffixed with `~dark`, for example `xyz~dark.png`.
                 
-                @Image(source: 01-writing-the-first-documentation-03-04.png, alt: "Screenshot Safari with github.com open and showing one of the images. The Download button on the website is highlighted.")
+                @Image(source: 01-writing-documentation-03-04.png, alt: "Screenshot Safari with github.com open and showing one of the images. The Download button on the website is highlighted.")
             }
             
             @Step {
                 Drag the two downloaded images into the `Resources` folder in Xcode.
                 
-                @Image(source: 01-writing-the-first-documentation-03-05.png, alt: "Screenshot of Xcode showing the images being dragged into the Resources folder.")
+                @Image(source: 01-writing-documentation-03-05.png, alt: "Screenshot of Xcode showing the images being dragged into the Resources folder.")
             }
             
             @Step {
                 Select `BuddyRenderer.swift` in the Project navigator.
                 
-                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-02-09.swift)
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-documentation-02-09.swift)
             }
             
             @Step {
                 Add a short informing users what the image depicts.
                 
-                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-03-01.swift) {
-                    @Image(source: 01-writing-the-first-documentation-03-06.png, alt: "Screenshot of the Developer Documentation showing the documentation of BuddyRenderer.")
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-documentation-03-01.swift) {
+                    @Image(source: 01-writing-documentation-03-06.png, alt: "Screenshot of the Developer Documentation showing the documentation of BuddyRenderer.")
                 }
             }
             
@@ -198,8 +198,8 @@
                 
                 > Info: Notice that we are not explicitly specifying the image to be used in dark mode. DocC will automatically chose whether to use the light or dark variant based on the naming scheme.
                 
-                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-03-02.swift) {
-                    @Image(source: 01-writing-the-first-documentation-03-07.png, alt: "Screenshot of the Developer Documentation showing the documentation of BuddyRenderer with the image of the character.")
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-documentation-03-02.swift) {
+                    @Image(source: 01-writing-documentation-03-07.png, alt: "Screenshot of the Developer Documentation showing the documentation of BuddyRenderer with the image of the character.")
                 }
             }
         }
@@ -214,7 +214,7 @@
             @Step {
                 Select `BuddyRenderer.swift` in the Project navigator.
                 
-                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-03-02.swift)
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-documentation-03-02.swift)
             }
             
             @Step {
@@ -222,16 +222,16 @@
                 
                 Asides are created by starting a line with a greater-than symbol (`>`) followed by a space, the type of the aside, a colon (`:`), and the content of the aside. Valid types of asides are `Note`, `Important`, `Warning`, `Tip`, and `Experiment`. Each type are stylized uniquely.
                 
-                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-04-01.swift) {
-                    @Image(source: 01-writing-the-first-documentation-04-01.png, alt: "Screenshot of the Developer Documentation showing the documentation of BuddyRenderer with the note highlighted.")
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-documentation-04-01.swift) {
+                    @Image(source: 01-writing-documentation-04-01.png, alt: "Screenshot of the Developer Documentation showing the documentation of BuddyRenderer with the note highlighted.")
                 }
             }
             
             @Step {
                 Finally, add an aside of type `Warning` to warn users that creating a canvas with a negative size has undefined behavior.
                 
-                @Code(name: "BuddyRenderer.swift", file: 01-writing-the-first-documentation-04-02.swift) {
-                    @Image(source: 01-writing-the-first-documentation-04-02.png, alt: "Screenshot of the Developer Documentation showing the documentation of BuddyRenderer with the warning highlighted.")
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-documentation-04-02.swift) {
+                    @Image(source: 01-writing-documentation-04-02.png, alt: "Screenshot of the Developer Documentation showing the documentation of BuddyRenderer with the warning highlighted.")
                 }
             }
         }

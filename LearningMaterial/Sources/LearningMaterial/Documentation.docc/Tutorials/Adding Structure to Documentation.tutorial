@@ -22,7 +22,7 @@
             @Step {
                 Select `Documentation.md` in the Project navigator.
                 
-                This file resides inside the Documentation Catalog that we created in the <doc:Writing-the-First-Documentation> tutorial.
+                This file resides inside the Documentation Catalog that we created in the <doc:Writing-Documentation> tutorial.
                 
                 @Code(name: "Documentation.md", file: 01-adding-structure-to-documentation-02-01.swift) {
                     @Image(source: 01-adding-structure-to-documentation-02-01.png, alt: "Screenshot of the editor in Xcode showing the Documentation.md file with the placeholders.")

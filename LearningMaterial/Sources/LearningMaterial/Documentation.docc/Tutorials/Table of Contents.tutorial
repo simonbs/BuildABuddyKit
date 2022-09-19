@@ -9,7 +9,7 @@
         @Image(source: 01-essentials.png, alt: "Square with the containing a pencil and ruler. On top of that is a hammer.")
         
         @TutorialReference(tutorial: "doc:Getting-Familiar-with-the-Project")
-        @TutorialReference(tutorial: "doc:Writing-the-First-Documentation")
+        @TutorialReference(tutorial: "doc:Writing-Documentation")
         @TutorialReference(tutorial: "doc:Adding-Structure-to-Documentation")
     }
 }
