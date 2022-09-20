@@ -18,6 +18,9 @@ struct PreviewView: View {
                 Image("PreviewBackground")
                 builder.backgroundColor
                 BuddyImage(builder.build())
+                    .transaction { transaction in
+                        transaction.animation = nil
+                    }
             }.frame(width: 200, height: 200)
             Spacer()
         }
