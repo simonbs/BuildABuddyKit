@@ -9,7 +9,9 @@
         
     @Section(title: "Adding a landing page") {
         @ContentAndMedia {
-            The landing page is usually the first part of your documentation that people see. It should give an overview of the functionality of your package or app. 
+            The landing page is usually the first part of your documentation that people see. It is shown when selecting BuildABuddyKit in the documentation window.
+            
+            This page should give an overview of the functionality of your package or app. 
         }
         
         @Steps {
@@ -74,13 +76,19 @@
             }
             
             @Step {
-                Finally, add all the types under their respective section.
+                Add all the symbols under their respective section.
                 
                 > Info: DocC will recognize symbols between double backticks as references to symbols in the framework or app.
                 
                 @Code(name: "Documentation.md", file: 01-adding-structure-to-documentation-02-07.swift) {
                     @Image(source: 01-adding-structure-to-documentation-02-06.png, alt: "Screenshot of the Developer Documentation window in Xcode showing the documentation of BuildABuddyKit.")
                 }
+            }
+            
+            @Step {
+                Finally, build the documentation and notice the structure on the landing page.
+                
+                @Image(source: 01-adding-structure-to-documentation-02-06.png, alt: "Screenshot of the Developer Documentation window in Xcode showing the documentation of BuildABuddyKit.")
             }
         }
     }
@@ -91,7 +99,7 @@
             
             It may not be necessary to manually structure the symbols for all types but you may want to do it for complex types or those that play a key role in your framework or app.
             
-            Markdown files that specify symbol-specific structure are  _extension files_ in DocC terms.
+            Markdown files that specify symbol-specific structure are called _extension files_ in DocC terms.
             
             In this section we will add an extension that improves the structure of the documentation of `BuddyRenderer`.
         }
@@ -170,11 +178,17 @@
             }
             
             @Step {
-                Finally, add the symbols for each topic group.
+                Add all the symbols under their respective section.
                 
                 @Code(name: "BuddyRenderer.md", file: 01-adding-structure-to-documentation-03-05.swift) {
                     @Image(source: 01-adding-structure-to-documentation-03-08.png, alt: "Screenshot of the Developer Documentation window in Xcode showing the documentation for BuddyRenderer.")
                 }
+            }
+            
+            @Step {
+                Finally, build the documentation and notice the new structure when viewing the docuemntation of `BuddyRenderer`.
+                
+                @Image(source: 01-adding-structure-to-documentation-03-08.png, alt: "Screenshot of the Developer Documentation window in Xcode showing the documentation for BuddyRenderer.")
             }
         }
     }

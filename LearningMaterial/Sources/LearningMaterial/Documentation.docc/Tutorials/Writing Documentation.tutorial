@@ -54,15 +54,15 @@
             @Step {
                 Select BuddyRenderer.swift in the Project navigator.
                 
-                We will add documentation to the BuddyRenderer type. This type takes an instance of Buddy as input and outputs and image.
+                We will add documentation to the BuddyRenderer type. This type takes an instance of Buddy as input and outputs an image.
                                 
                 @Code(name: "BuddyRenderer.swift", file: 01-writing-documentation-02-01.swift)
             }
             
             @Step {
-                Add a summary to the documentation.
+                The first line in your documentation is treated as the summary which is shown below the type name. The summary should be kept short and concise. Add a summary to the documentation.
                 
-                The first line in your documentation is treated as the summary which is shown below the type name. The summary should be kept short and concise.
+                You are encouraged to build the documentation throughout each step of this series of tutorials. This will give you a better understanding of how the changes affect the documentation.
                 
                 > Tip: You can copy and paste the documentation from the source code on the right-hand side.
                 
@@ -136,11 +136,17 @@
             @Step {
                 Add documentation to the `render(_:)` function.
                 
-                > Tip: Checkout the `step-3` branch and build the documentation to view the documentation for all symbols.
-                
                 @Code(name: "BuddyRenderer.swift", file: 01-writing-documentation-02-09.swift) {
                     @Image(source: 01-writing-documentation-02-09.png, alt: "Screenshot of the documentation of the render-function on BuddyRenderer.")
                 }
+            }
+            
+            @Step {
+                Finally, build the documentation and browse the documentation for `BuddyRenderer`.
+                
+                > Tip: Checkout the `step-3` branch and build the documentation to view the documentation for all symbols.
+                
+                @Image(source: 01-writing-documentation-02-10.png, alt: "Screenshot of the documentation of BuddyRenderer.")
             }
         }
     }
@@ -174,7 +180,9 @@
             }
             
             @Step {
-                You should see three new items in the Project navigator. There is the Documentation catalog which contains `Documentation.md` and a folder named `Resources`. We will store our images in the `Resources` folder. We will have a closer look at `Documentation.md` in the <doc:Adding-Structure-to-Documentation> tutorial.
+                You should see three new items in the Project navigator. There is the Documentation catalog which contains `Documentation.md` and a folder named `Resources`. We will store our images in the `Resources` folder.
+                
+                We will have a closer look at the `Documentation.md` file in the <doc:Adding-Structure-to-Documentation> tutorial.
                 
                 @Image(source: 01-writing-documentation-03-03.png, alt: "Screenshot of the Project navigator in Xcode with the Documentation catalog and the files in it highlighted.")
             }
@@ -202,7 +210,7 @@
             }
             
             @Step {
-                Add a short informing users what the image depicts.
+                Add a short text informing users what the image depicts.
                 
                 @Code(name: "BuddyRenderer.swift", file: 01-writing-documentation-03-01.swift) {
                     @Image(source: 01-writing-documentation-03-06.png, alt: "Screenshot of the Developer Documentation showing the documentation of BuddyRenderer.")
@@ -214,11 +222,17 @@
                 
                 > Info: Notice that we are not explicitly specifying the image to be used in dark mode. DocC will automatically chose whether to use the light or dark variant based on the naming scheme.
                 
-                > Tip: Checkout the `step-4` branch and build the documentation which includes images for several types. For example, the documentation of each case in the `Shirt.Front.Style` enum shows a preview of the shirt style.
-                
                 @Code(name: "BuddyRenderer.swift", file: 01-writing-documentation-03-02.swift) {
                     @Image(source: 01-writing-documentation-03-07.png, alt: "Screenshot of the Developer Documentation showing the documentation of BuddyRenderer with the image of the character.")
                 }
+            }
+            
+            @Step {
+                Finally, build the documentation to view the image in the `BuddyRenderer` type.
+                
+                > Tip: Checkout the `step-4` branch and build the documentation. Notice that the documentation now contains images for several types. For example, the documentation of each case in the `Shirt.Front.Style` enum shows a preview of the shirt style.
+                
+                @Image(source: 01-writing-documentation-03-08.png, alt: "Screenshot of the Developer Documentation showing the documentation of BuddyRenderer with the image of the character.")
             }
         }
     }
@@ -252,11 +266,17 @@
             }
             
             @Step {
-                Finally, add an aside of type `Warning` to warn users that creating a canvas with a negative size has undefined behavior.
+                Add an aside of type `Warning` to warn users that creating a canvas with a negative size has undefined behavior.
                 
                 @Code(name: "BuddyRenderer.swift", file: 01-writing-documentation-04-02.swift) {
                     @Image(source: 01-writing-documentation-04-02.png, alt: "Screenshot of the Developer Documentation showing the documentation of BuddyRenderer with the warning highlighted.")
                 }
+            }
+            
+            @Step {
+                Finally, build the documentation to view the asides in the `BuddyRenderer` type.
+
+                @Image(source: 01-writing-documentation-04-03.png, alt: "Screenshot of the Developer Documentation showing the documentation of BuddyRenderer.")
             }
         }
     }
