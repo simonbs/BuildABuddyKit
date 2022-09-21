@@ -6,7 +6,7 @@
     }
     
     @Chapter(name: "BuildABuddyKit Essentials") {
-        Essentials
+        Get started using BuildABuddyKit.
         
         @Image(source: 01-buildabuddykit-essentials.png, alt: "A character's face outlined with a dashed border.")
         
