@@ -24,7 +24,7 @@
             }
             
             @Step {
-                Enter "BuddyCreator" as the product name, select "SwiftUI" for the interface "Swift" for the language, and click Next. Choose a location to save the BuddyCreator project on your Mac.
+                Enter "BuddyCreator" as the product name, select "SwiftUI" for the interface, and select "Swift" for the language, and click Next. Choose a location to save the BuddyCreator project on your Mac.
                 
                 @Image(source: 01-customizing-a-buddy-01-03.png, alt: "A screenshot of the project sheet, which shows the Product Name for the app being built as TextCompanion. The interface is set to Storyboard, and the language is set to Swift.")
             }
