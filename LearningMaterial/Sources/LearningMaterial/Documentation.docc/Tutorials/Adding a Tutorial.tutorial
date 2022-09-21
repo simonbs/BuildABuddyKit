@@ -1,0 +1,465 @@
+@Tutorial(time: 30) {
+    @Intro(title: "Adding a Tutorial") {
+        Interactive tutorials is a great way to present your technology to readers.
+        
+        In this section we will add a tutorial that guides readers through creating and customizing a `Buddy`.
+        
+        A DocC tutorial about making DocC tutorials? Why not! 😃
+    }
+    
+    @Section(title: "Add the table of contents") {
+        @ContentAndMedia {
+            The table of contents provides an overview of the tutorials offered in your documentation.
+        }
+        
+        @Steps {
+            @Step {
+                Checkout the `step-7` branch in the Git repository.
+                
+                > Warning: The section will reference images that are included in the `step-7` branch. Without these images and files you will not be able to complete this tutorial. You may refer to <doc:Writing-Documentation> tutorial for instructions on adding an image yourself. 
+                
+                @Image(source: tutorial-git-step-7.png, alt: "Screenshot of Terminal showing the step-7 branch being checked out.")
+            }
+            
+            @Step {
+                Right-click the documentation catalog in the Project navigator and select New Folder.
+                
+                @Image(source: 02-adding-a-tutorial-01-01.png, alt: "Screenshot of the Project navigator in Xcode with the documentation catalog and the New Folder menu item highlighted.")
+            }
+            
+            @Step {
+                Name the new folder "Tutorials".
+                
+                @Image(source: 02-adding-a-tutorial-01-02.png, alt: "Screenshot of the Project navigator in Xcode with the newly createde folder highlighted showing that it is being named Tutorials.")
+            }
+            
+            @Step {
+                Right-click the Tutorials folder and select New File.
+                
+                @Image(source: 02-adding-a-tutorial-01-03.png, alt: "Screenshot of the Project navigator in Xcode with the Tutorials folder and the New File menu item highlighted.")
+            }
+            
+            @Step {
+                Choose Tutorial Table of Contents File in the Template picker and select Next.
+                
+                @Image(source: 02-adding-a-tutorial-01-04.png, alt: "Screenshot of the Template picker in Xcode with the Tutorial Table of Contents File option highlighted.")
+            }
+            
+            @Step {
+                Name the file "Meet BuildABuddyKit.tutorial" and select Create.
+                
+                @Image(source: 02-adding-a-tutorial-01-05.png, alt: "Screenshot of the New File dialog with the filename text field and Create button highlighted.")
+            }
+            
+            @Step {
+                Select "Meet BuildABuddyKit.tutorial" in the Project navigator.
+                
+                The template contains three directives: `Tutorials`, `Intro`, and `Chapters`. The `Tutorials` directive contains the structure of the tutorial, the `Intro` directive describes the tutorial, and the `Chapter` directive references step-by-step pages of the tutorial. 
+                
+                @Code(name: "Meet BuildABuddyKit.tutorial.md", file: 02-adding-a-tutorial-01-01.swift) {
+                    @Image(source: 02-adding-a-tutorial-01-06.png, alt: "Screenshot of the editor in Xcode showing the Meet BuildABuddyKit.tutorial and the placeholders in the file.")
+                }
+            }
+            
+            @Step {
+                Add a name to your series of tutorials. This is typically the same as your product.
+                
+                @Code(name: "Meet BuildABuddyKit.tutorial.md", file: 02-adding-a-tutorial-01-02.swift) {
+                    @Image(source: 02-adding-a-tutorial-01-07.png, alt: "Screenshot of the tutorial table of contents.")
+                }
+            }
+            
+            @Step {
+                Add a title to your series of tutorials. This will be displayed prominently in the table of contents.
+                
+                @Code(name: "Meet BuildABuddyKit.tutorial.md", file: 02-adding-a-tutorial-01-03.swift) {
+                    @Image(source: 02-adding-a-tutorial-01-08.png, alt: "Screenshot of the tutorial table of contents.")
+                }
+            }
+            
+            @Step {
+                Provide an engaging text that describes the tutorials.
+                
+                @Code(name: "Meet BuildABuddyKit.tutorial.md", file: 02-adding-a-tutorial-01-04.swift) {
+                    @Image(source: 02-adding-a-tutorial-01-09.png, alt: "Screenshot of the tutorial table of contents.")
+                }
+            }
+            
+            @Step {
+                Add an image to the table of contents that catches the reader's attention.
+                
+                > Info: If you checked out the `step-7` branch earlier then the image is already located in the Resources folder. You may refer to <doc:Writing-Documentation> tutorial for instructions on adding an image yourself.
+                
+                @Code(name: "Meet BuildABuddyKit.tutorial.md", file: 02-adding-a-tutorial-01-05.swift) {
+                    @Image(source: 02-adding-a-tutorial-01-10.png, alt: "Screenshot of the tutorial table of contents.")
+                }
+            }
+            
+            @Step {
+                Add a name to the chapter.
+                
+                Chapters group related tutorials. This chapter will explain users the essentials of using the BuildABuddyKit framework so we will name it "BuildABuddyKit Essentials".
+                
+                @Code(name: "Meet BuildABuddyKit.tutorial.md", file: 02-adding-a-tutorial-01-06.swift) {
+                    @Image(source: 02-adding-a-tutorial-01-11.png, alt: "Screenshot of the tutorial table of contents.")
+                }
+            }
+            
+            @Step {
+                Add a descriptive text to the chapter.
+                
+                @Code(name: "Meet BuildABuddyKit.tutorial.md", file: 02-adding-a-tutorial-01-07.swift) {
+                    @Image(source: 02-adding-a-tutorial-01-11.png, alt: "Screenshot of the tutorial table of contents.")
+                }
+            }
+            
+            @Step {
+                Add an image to the chapter. Chapters must have an image. Xcode will show a warning when building the documentation if a chapter does not have an image.
+                
+                @Code(name: "Meet BuildABuddyKit.tutorial.md", file: 02-adding-a-tutorial-01-08.swift) {
+                    @Image(source: 02-adding-a-tutorial-01-11.png, alt: "Screenshot of the tutorial table of contents.")
+                }
+            }
+            
+            @Step {
+                Remove the tutorial reference. We will add it again once we have written the tutorial to reference.
+                
+                @Code(name: "Meet BuildABuddyKit.tutorial.md", file: 02-adding-a-tutorial-01-09.swift) {
+                    @Image(source: 02-adding-a-tutorial-01-11.png, alt: "Screenshot of the tutorial table of contents.")
+                }
+            }
+            
+            @Step {
+                Finally, build the documentation and select "Meet BuildABuddyKit" under Workspace Documentation to view the table of contents.
+                
+                Xcode will show a warning because the chapter does not contain any tutorial and for the same reason the table of contents will not show the chapter. We will address this in the next section.
+                
+                @Image(source: 02-adding-a-tutorial-01-11.png, alt: "Screenshot of the tutorial table of contents.")
+            }
+        }
+    }
+        
+    @Section(title: "Add a tutorial") {
+        @ContentAndMedia {
+            In this section we will add a tutorial that guides readers throug creating and customizing an instance of `Buddy` and make it available through the table of contents.
+            
+            > Tip: You are encouraged to build the documentation as you go through the following steps to see how the tutorial changes along the way.
+        }
+        
+        @Steps {
+            @Step {
+                Checkout the `step-8` branch in the Git repository.
+                
+                > Warning: The section will reference images and files that are included in the `step-8` branch. Without these images and files you will not be able to complete this tutorial.
+                
+                @Image(source: tutorial-git-step-8.png, alt: "Screenshot of Terminal showing the step-7 branch being checked out.")
+            }
+            
+            @Step {
+                Notice that the Tutorials folder contains nine Swift files. These are the code snippets that will be used in our tutorial. Creating the Swift files is a detail that is left out of this tutorial.
+                
+                It is recommended that you spend a minute browsing the Swift files to notice that each file builds upon the previous. For example, `01-customizing-a-buddy-01-01.swift` contains a SwiftUI view and it's body and `01-customizing-a-buddy-01-02.swift` adds a property to the same view.
+                
+                 @Image(source: 02-adding-a-tutorial-02-01.png, alt: "Screenshot of the Project navigator in Xcode with the nine Swift files highlighted.")
+            }
+            
+            @Step {
+                Right-click the Tutorials folder and select New File.
+                
+                @Image(source: 02-adding-a-tutorial-02-02.png, alt: "Screenshot of the Project navigator in Xcode with Tutorials folder and the New File menu item highlighted.")
+            }
+            
+            @Step {
+                Choose Tutorial File in the Template picker and select Next.
+                
+                @Image(source: 02-adding-a-tutorial-02-02.png, alt: "Screenshot of the Tempalte picker in Xcode with Tutorial File and the Create button highlighted.")
+            }
+            
+            @Step {
+                Name the file "Customizing a Buddy.tutorial" and select Create.
+                
+                @Image(source: 02-adding-a-tutorial-02-04.png, alt: "Screenshot of the New File dialog with the filename text field and Create button highlighted.")
+            }
+            
+            @Step {
+                Select "Meet BuildABuddyKit.tutorial" in the Project navigator.
+                
+                @Code(name: "Meet BuildABuddyKit.tutorial.md", file: 02-adding-a-tutorial-01-09.swift) {
+                    @Image(source: 02-adding-a-tutorial-02-05.png, alt: "Screenshot of the tutorial table of contents.")
+                }
+            }
+            
+            @Step {
+                Add a reference to the newly created tutorial.
+                
+                > Tip: You are encouraged to continously build the documentation to see how changes affect the resulting documentation. Now is a good time to build the docuemntation and visit the table of contents as it will now show the chapter.
+                
+                @Code(name: "Meet BuildABuddyKit.tutorial.md", file: 02-adding-a-tutorial-02-01.swift) {
+                    @Image(source: 02-adding-a-tutorial-02-06.png, alt: "Screenshot of the tutorial table of contents.")
+                }
+            }
+            
+            @Step {
+                Select "Customizing a Buddy.tutorial" in the Project navigator.
+                
+                The template contains several directives, including `Tutorial`, `Intro`, `Section`, and `Steps`. We will go over each of them in the following steps.
+                
+                @Code(name: "Customizing a Buddy.tutorial.md", file: 02-adding-a-tutorial-02-02.swift) {
+                    @Image(source: 02-adding-a-tutorial-02-07.png, alt: "Screenshot of the editor in Xcode showing the Customizing a Buddy.tutorial and the placeholders in the file.")
+                }
+            }
+            
+            @Step {
+                Add an estimated time it takes to complete the tutorial. The is specified in minutes and displayed both in the tutorial and in the table of contents.
+                
+                @Code(name: "Customizing a Buddy.tutorial.md", file: 02-adding-a-tutorial-02-03.swift) {
+                    @Image(source: 02-adding-a-tutorial-02-09.png, alt: "Screenshot of the Customizing a Buddy tutorial.")
+                }
+            }
+            
+            @Step {
+                Add the title of the tutorial.
+                
+                @Code(name: "Customizing a Buddy.tutorial.md", file: 02-adding-a-tutorial-02-04.swift) {
+                    @Image(source: 02-adding-a-tutorial-02-10.png, alt: "Screenshot of the Customizing a Buddy tutorial.")
+                }
+            }
+            
+            @Step {
+                Add a description informing users what they will do in this tutorial.
+                
+                @Code(name: "Customizing a Buddy.tutorial.md", file: 02-adding-a-tutorial-02-05.swift) {
+                    @Image(source: 02-adding-a-tutorial-02-11.png, alt: "Screenshot of the Customizing a Buddy tutorial.")
+                }
+            }
+            
+            @Step {
+                Remove the image from the intro.
+                
+                The image is optional and while it looks great to have one in the tutorial, it serves little purpose so we will leave it out.
+                
+                @Code(name: "Customizing a Buddy.tutorial.md", file: 02-adding-a-tutorial-02-06.swift) {
+                    @Image(source: 02-adding-a-tutorial-02-11.png, alt: "Screenshot of the Customizing a Buddy tutorial.")
+                }
+            }
+            
+            @Step {
+                Add a title to the section.
+                
+                The `Section`  directive is used to show a unit of work that consists of text and media. A tutorial must contain at least one section.
+                
+                @Code(name: "Customizing a Buddy.tutorial.md", file: 02-adding-a-tutorial-02-07.swift) {
+                    @Image(source: 02-adding-a-tutorial-02-12.png, alt: "Screenshot of the Customizing a Buddy tutorial.")
+                }
+            }
+            
+            @Step {
+                Add a text that describes what readers will do in this section of the tutorial.
+                
+                The `ContentAndMedia` directive groups a text and an image or video. A section should contain one of these otherwise the section will not be shown in the tutorial.
+                
+                @Code(name: "Customizing a Buddy.tutorial.md", file: 02-adding-a-tutorial-02-08.swift) {
+                    @Image(source: 02-adding-a-tutorial-02-13.png, alt: "Screenshot of the Customizing a Buddy tutorial.")
+                }
+            }
+            
+            @Step {
+                Add an image to the `ContentAndMedia` directive.
+                
+                @Code(name: "Customizing a Buddy.tutorial.md", file: 02-adding-a-tutorial-02-09.swift) {
+                    @Image(source: 02-adding-a-tutorial-02-14.png, alt: "Screenshot of the Customizing a Buddy tutorial.")
+                }
+            }
+            
+            @Step {
+                Add the first step that the reader must perform inside the first `Step` directive within the `Steps` directive.
+                
+                A section should contain exactly one `Steps` directive that in turn contains one or more `Step` directives. Each individual step (represented by a `@Step` directive) represents a small task that the user should perform.
+                
+                @Code(name: "Customizing a Buddy.tutorial.md", file: 02-adding-a-tutorial-02-10.swift) {
+                    @Image(source: 02-adding-a-tutorial-02-15.png, alt: "Screenshot of the Customizing a Buddy tutorial.")
+                }
+            }
+            
+            @Step {
+                Replace the `Image` directive within the first step with a `Code` directive.
+                
+                The `Code` directive takes two parameters: the name of the file which will be displayed in the tutorial and a reference to the Swift file containing the code to be displayed in the tutorial. 
+                
+                > Info: If you checked out the `step-7` branch earlier then the Swift file is already located in the Tutorials folder.
+                
+                @Code(name: "Customizing a Buddy.tutorial.md", file: 02-adding-a-tutorial-02-11.swift) {
+                    @Image(source: 02-adding-a-tutorial-02-16.png, alt: "Screenshot of the Customizing a Buddy tutorial.")
+                }
+            }
+            
+            @Step {
+                Add a description to the second step.
+                
+                @Code(name: "Customizing a Buddy.tutorial.md", file: 02-adding-a-tutorial-02-12.swift) {
+                    @Image(source: 02-adding-a-tutorial-02-17.png, alt: "Screenshot of the Customizing a Buddy tutorial.")
+                }
+            }
+            
+            @Step {
+                Add a `Code` directive to the second step.
+                
+                Because the `Code` directive references a file named ContentView.swift, which is the same name as in the previous step, DocC will automatically render the diff between the code in this step and in the previous step.
+                
+                @Code(name: "Customizing a Buddy.tutorial.md", file: 02-adding-a-tutorial-02-13.swift) {
+                    @Image(source: 02-adding-a-tutorial-02-18.png, alt: "Screenshot of the Customizing a Buddy tutorial.")
+                }
+            }
+            
+            @Step {
+                Add an `Image` directive as a child of the `Code` directive.
+                
+                Because the `Image` is nested within the `Code` directive, it will be rendered as a preview that can be expanded and collapsed.
+                
+                @Code(name: "Customizing a Buddy.tutorial.md", file: 02-adding-a-tutorial-02-14.swift) {
+                    @Image(source: 02-adding-a-tutorial-02-19.png, alt: "Screenshot of the Customizing a Buddy tutorial.")
+                }
+            }
+            
+            @Step {
+                Add the remaining steps of the tutorial.
+                
+                @Code(name: "Customizing a Buddy.tutorial.md", file: 02-adding-a-tutorial-02-15.swift) {
+                    @Image(source: 02-adding-a-tutorial-02-20.png, alt: "Screenshot of the Customizing a Buddy tutorial.")
+                }
+            }
+            
+            @Step {
+                Finally, build the documentation and view the tutorial.
+                
+                @Image(source: 02-adding-a-tutorial-02-21.png, alt: "Screenshot of the Customizing a Buddy tutorial.")
+            }
+        }
+    }
+    
+    @Assessments {
+        @MultipleChoice {
+            How many chapters can a series of tutorials contain?
+            
+            @Choice(isCorrect: false) {
+                There can only be one.
+                
+                @Justification(reaction: "Try again!") {
+                    Oops, that is not correct.
+                }
+            }
+            
+            @Choice(isCorrect: false) {
+                Up to five.
+                
+                @Justification(reaction: "Try again!") {
+                    Sorry, that is not correct.
+                }
+            }
+            
+            @Choice(isCorrect: true) {
+                As many as the developer would like.
+                
+                @Justification(reaction: "Correct!") {
+                    That is correct! You can add all the chapters you would like.
+                }
+            }
+        }
+        
+        @MultipleChoice {
+            Which unit do we use to specify the estimated time it takes to complete a tutorial?
+            
+            @Choice(isCorrect: false) {
+                Seconds.
+                
+                @Justification(reaction: "Try again!") {
+                    Oops, that is not correct.
+                }
+            }
+            
+            @Choice(isCorrect: true) {
+                Minutes.
+                
+                @Justification(reaction: "Correct!") {
+                    That is correct! The table of contents displays the estimated time it takes to complete a tutorial to set people's expectations straight.
+                }
+            }
+            
+            @Choice(isCorrect: false) {
+                Hours.
+                
+                @Justification(reaction: "Try again!") {
+                    Sorry, that is not correct.
+                }
+            }
+        }
+        
+        @MultipleChoice {
+            Which directive can we use to show syntax highlighted Swift code next in a step?
+            
+            @Choice(isCorrect: true) {
+                `@Code`
+                
+                @Justification(reaction: "Correct!") {
+                    That is correct!
+                }
+            }
+            
+            @Choice(isCorrect: false) {
+                `@Swift`
+                
+                @Justification(reaction: "Try again!") {
+                    Bummer! That is not correct.
+                }
+            }
+            
+            @Choice(isCorrect: false) {
+                `@SyntaxHighlight`
+                
+                @Justification(reaction: "Try again!") {
+                    Sorry, that is not correct.
+                }
+            }
+        }
+        
+        @MultipleChoice {
+            How can we display a preview next to a code snippet?
+            
+            @Choice(isCorrect: true) {
+                ```markdown
+                @Code(name: "ContentView.md", file: content-view-01.swift) {
+                    @Image(source: preview.png, alt: "Preview of the ContentView.")
+                }
+                ```
+                
+                @Justification(reaction: "Correct!") {
+                    That is correct!
+                }
+            }
+            
+            @Choice(isCorrect: false) {
+                ```markdown
+                @Code(name: "ContentView.md", file: content-view-01.swift) {
+                    @Preview(source: preview.png, alt: "Preview of the ContentView.")
+                }
+                ```
+                
+                @Justification(reaction: "Try again!") {
+                    Bummer! That is not correct.
+                }
+            }
+            
+            @Choice(isCorrect: false) {
+                ```markdown
+                @Code(name: "ContentView.md", file: content-view-01.swift) {
+                    @Simulator(source: preview.png, alt: "Preview of the ContentView.")
+                }
+                ```
+                
+                @Justification(reaction: "Try again!") {
+                    Sorry, that is not correct.
+                }
+            }
+        }
+    }
+}
