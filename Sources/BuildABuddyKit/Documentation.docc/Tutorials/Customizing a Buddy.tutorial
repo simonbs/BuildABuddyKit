@@ -51,7 +51,7 @@
     
     @Section(title: "Create and customize a buddy") {
         @ContentAndMedia {
-            Create and configure an Xcode project that uses BuildABuddyKit.
+            Create an instance of `Buddy` and customize it.
                 
             @Image(source: 01-customizing-a-buddy-01.png, alt: "A MacBook Pro running Xcode.")
         }
