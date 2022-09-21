@@ -6,10 +6,18 @@
     @Chapter(name: "Essentials") {
         Guides you through writing your first documentation in DocC. 
         
-        @Image(source: 01-essentials.png, alt: "Square with the containing a pencil and ruler. On top of that is a hammer.")
+        @Image(source: 01-essentials.png, alt: "A puzzle piece.")
         
         @TutorialReference(tutorial: "doc:Getting-Familiar-with-the-Project")
         @TutorialReference(tutorial: "doc:Writing-Documentation")
         @TutorialReference(tutorial: "doc:Adding-Structure-to-Documentation")
+    }
+    
+    @Chapter(name: "Tutorials") {
+        Guides you through advanced topics in DocC.
+        
+        @Image(source: 02-advanced.png, alt: "Thee puzzle pieces put together.")
+        
+        @TutorialReference(tutorial: "doc:Adding-a-Tutorial")
     }
 }
