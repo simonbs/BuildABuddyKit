@@ -322,7 +322,7 @@
             }
             
             @Step {
-                Add the remaining steps of the tutorial.
+                Add the remaining steps to the section by copying them from the code on the right-hand side and inserting it into your tutorial.
                 
                 @Code(name: "Customizing a Buddy.tutorial.md", file: 02-adding-a-tutorial-02-15.swift) {
                     @Image(source: 02-adding-a-tutorial-02-20.png, alt: "Screenshot of the Customizing a Buddy tutorial.")
@@ -330,9 +330,19 @@
             }
             
             @Step {
+                Apple's tutorials tend to start with a section detailing how readers should create an Xcode project. We will do the same in our tutorial and at the same time let readers know how to add the BuildABuddyKit package to our package.
+                
+                Copy the new section from the code on the right-hand side and add it to your tutorial.
+                
+                @Code(name: "Customizing a Buddy.tutorial.md", file: 02-adding-a-tutorial-02-16.swift) {
+                    @Image(source: 02-adding-a-tutorial-02-21.png, alt: "Screenshot of the Customizing a Buddy tutorial.")
+                }
+            }
+            
+            @Step {
                 Finally, build the documentation and view the tutorial.
                 
-                @Image(source: 02-adding-a-tutorial-02-21.png, alt: "Screenshot of the Customizing a Buddy tutorial.")
+                @Image(source: 02-adding-a-tutorial-02-22.png, alt: "Screenshot of the Customizing a Buddy tutorial.")
             }
         }
     }
