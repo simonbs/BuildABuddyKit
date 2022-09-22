@@ -1,0 +1,187 @@
+@Tutorial(time: 10) {
+    @Intro(title: "Linking to Resources") {
+        This tutorial will guide you through linking to additional resources from your documentation.
+        
+        Apple use the resources section of documentation to link to videos, forums, sample code, and much more. See the bottom of Apple's [Introducing SwiftUI](https://developer.apple.com/tutorials/swiftui) tutorial series for an example of adding resources to documentation.
+    }
+    
+    @Section(title: "Adding the Resources directive") {
+        @ContentAndMedia {
+            We will use the `Resources` directive to present readers with links to more documentation, forums, and sample code.
+            
+            > Tip: You are encouraged to build the documentation as you go through the following steps to see how the tutorial changes along the way.
+        }
+        
+        @Steps {
+            @Step {
+                Checkout the `step-9` branch in the Git repository.
+   
+                @Image(source: tutorial-git-step-9.png, alt: "Screenshot of Terminal showing the step-9 branch being checked out.")
+            }
+            
+            @Step {
+                Select "Meet MeetBuildABuddyKit.tutorial" in the Project navigator.
+   
+                @Code(name: "Meet BuildABuddyKit.tutorial.md", file: 02-linking-to-resources-01-01.swift) {
+                    @Image(source: 02-linking-to-resources-01-01.png, alt: "Screenshot of the Meet BuildABuddyKit landing page.")
+                }
+            }
+            
+            @Step {
+                Add the `Resources` directive.
+                
+                This will contain all the resources that will be presented to the readers.
+   
+                @Code(name: "Meet BuildABuddyKit.tutorial.md", file: 02-linking-to-resources-01-02.swift) {
+                    @Image(source: 02-linking-to-resources-01-01.png, alt: "Screenshot of the Meet BuildABuddyKit landing page.")
+                }
+            }
+            
+            @Step {
+                Add a short description of the resources that readers can expect to find in the section.
+   
+                @Code(name: "Meet BuildABuddyKit.tutorial.md", file: 02-linking-to-resources-01-03.swift) {
+                    @Image(source: 02-linking-to-resources-01-02.png, alt: "Screenshot of the Meet BuildABuddyKit landing page with the resources section highlighted.")
+                }
+            }
+        }
+    }
+        
+    @Section(title: "Add links to other documentation") {
+        @ContentAndMedia {
+            Use the `Documentation` directive to direct readers to documentation you are hosting elsewhere, for example on GitHub, or any articles that may be relevant for readers. 
+        }
+            
+        @Steps {
+            @Step {
+                Select "Meet MeetBuildABuddyKit.tutorial" in the Project navigator.
+                
+                @Code(name: "Meet BuildABuddyKit.tutorial.md", file: 02-linking-to-resources-02-01.swift) {
+                    @Image(source: 02-linking-to-resources-02-01.png, alt: "Screenshot of the Meet BuildABuddyKit landing page.")
+                }
+            }
+            
+            @Step {
+                Add the `Documentation` directive. This directive requires a link.
+                
+                The link supplied to the `Documentation` directive will typically link to other documentation resources. In our case we will just link to the GitHub repository where readers can find more details about the package.
+   
+                @Code(name: "Meet BuildABuddyKit.tutorial.md", file: 02-linking-to-resources-02-02.swift) {
+                    @Image(source: 02-linking-to-resources-02-02.png, alt: "Screenshot of the Meet BuildABuddyKit landing page with the documentation section highlighted.")
+                }
+            }
+            
+            @Step {
+                Add a short description of the documentation resources.
+   
+                @Code(name: "Meet BuildABuddyKit.tutorial.md", file: 02-linking-to-resources-02-03.swift) {
+                    @Image(source: 02-linking-to-resources-02-03.png, alt: "Screenshot of the Meet BuildABuddyKit landing page with the description in the documentation section highlighted.")
+                }
+            }
+            
+            @Step {
+                Add any relevant links as children of the `Documentation` directive using Markdown syntax.
+                
+                The links will typically direct readers to articles on getting started using the package. In our case we will link to the documentation section of the README in the BuildABuddyKit repository.
+   
+                @Code(name: "Meet BuildABuddyKit.tutorial.md", file: 02-linking-to-resources-02-04.swift) {
+                    @Image(source: 02-linking-to-resources-02-04.png, alt: "Screenshot of the Meet BuildABuddyKit landing page with the link in the documentation section highlighted.")
+                }
+            }
+        }
+    }
+     
+     @Section(title: "Add communication channels") {
+         @ContentAndMedia {
+             Next up we will add a section describing where readers can find communication channels.
+         }
+         
+         @Steps {
+             @Step {
+                 Select "Meet MeetBuildABuddyKit.tutorial" in the Project navigator.
+                 
+                 @Code(name: "Meet BuildABuddyKit.tutorial.md", file: 02-linking-to-resources-03-01.swift) {
+                     @Image(source: 02-linking-to-resources-03-01.png, alt: "Screenshot of the Meet BuildABuddyKit landing page.")
+                 }
+             }
+             
+             @Step {
+                Add the `Forums` directive. This directive requires a link.
+                
+                Typically the link should lead readers to the landing page of our forums but in this case we will link to the GitHub repository.
+                
+                @Code(name: "Meet BuildABuddyKit.tutorial.md", file: 02-linking-to-resources-03-02.swift) {
+                    @Image(source: 02-linking-to-resources-03-02.png, alt: "Screenshot of the Meet BuildABuddyKit landing page with the forums section highlighted.")
+                }
+             }
+             
+             @Step {
+                 Add a short description of the type of communication channels.
+                 
+                 @Code(name: "Meet BuildABuddyKit.tutorial.md", file: 02-linking-to-resources-03-03.swift) {
+                     @Image(source: 02-linking-to-resources-03-03.png, alt: "Screenshot of the Meet BuildABuddyKit landing page with the description in the forums section highlighted.")
+                 }
+             }
+             
+             @Step {
+                 Add links to the specific communication channels using Markdown syntax.
+                 
+                 This is a great place to add links to a Slack, Discord, or other forums hosted on the Internet. In this case we add links to creating pull requests and opening issues for BuildABuddyKit.
+                 
+                 @Code(name: "Meet BuildABuddyKit.tutorial.md", file: 02-linking-to-resources-03-04.swift) {
+                     @Image(source: 02-linking-to-resources-03-04.png, alt: "Screenshot of the Meet BuildABuddyKit landing page with the links in the forums section highlighted.")
+                 }
+             }
+         }
+    }
+         
+    @Section(title: "Add sample code") {
+        @ContentAndMedia {
+            Adding links to sample code is a great way to get people started using your product quickly.
+            
+            In this section we will add a link to the Build a Buddy example app that we had a brief look at in the <doc:Getting-Familiar-with-the-Project> tutorial.
+        }
+        
+        @Steps {
+            @Step {
+                Select "Meet MeetBuildABuddyKit.tutorial" in the Project navigator.
+   
+                @Code(name: "Meet BuildABuddyKit.tutorial.md", file: 02-linking-to-resources-04-01.swift) {
+                    @Image(source: 02-linking-to-resources-04-01.png, alt: "Screenshot of the Meet BuildABuddyKit landing page.")
+                }
+            }
+            
+            @Step {
+                Add the `SampleCode` directive.
+                
+                Contrary to the `Documentation` and `Forums` directives, the `SampleCode` directive does not require a link.
+   
+                @Code(name: "Meet BuildABuddyKit.tutorial.md", file: 02-linking-to-resources-04-02.swift) {
+                    @Image(source: 02-linking-to-resources-04-02.png, alt: "Screenshot of the Meet BuildABuddyKit landing page with the sample code section highlighted.")
+                }
+            }
+            
+            @Step {
+                Add a short description of the sample code that readers can expect to find.
+   
+                @Code(name: "Meet BuildABuddyKit.tutorial.md", file: 02-linking-to-resources-04-03.swift) {
+                    @Image(source: 02-linking-to-resources-04-03.png, alt: "Screenshot of the Meet BuildABuddyKit landing page with the description in the sample code section highlighted.")
+                }
+            }
+            
+            @Step {
+                Add a link to the Build a Buddy app that readers can use to explore the BuildABuddyKit package.
+   
+                @Code(name: "Meet BuildABuddyKit.tutorial.md", file: 02-linking-to-resources-04-04.swift) {
+                    @Image(source: 02-linking-to-resources-04-04.png, alt: "Screenshot of the Meet BuildABuddyKit landing page with the link in the sample code section highlighted.")
+                }
+            }
+            
+            @Step {
+                Finally, build the documentation to view the resources at the bottom of the landing page.
+                
+                @Image(source: 02-linking-to-resources-04-05.png, alt: "Screenshot of the Meet BuildABuddyKit landing page.")
+            }
+        }
+    }
+}
