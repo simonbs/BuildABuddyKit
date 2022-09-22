@@ -1,10 +1,10 @@
 @Tutorial(time: 30) {
     @Intro(title: "Adding a Tutorial") {
-        Interactive tutorials is a great way to present your technology to readers.
+        Interactive tutorials are a great way to present your technology to readers.
         
         In this section we will add a tutorial that guides readers through creating and customizing a `Buddy`.
         
-        A DocC tutorial about making DocC tutorials? Why not! 😃
+        > Tip: Pssst... All the learning material you have been reading up until now was made using DoCC. That means that this is a DocC tutorial about making DocC tutorials! 🤯😃
     }
     
     @Section(title: "Add the table of contents") {

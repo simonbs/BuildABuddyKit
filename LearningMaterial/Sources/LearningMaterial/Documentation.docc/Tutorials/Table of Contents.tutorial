@@ -13,11 +13,12 @@
         @TutorialReference(tutorial: "doc:Adding-Structure-to-Documentation")
     }
     
-    @Chapter(name: "Tutorials") {
-        Guides you through advanced topics in DocC.
+    @Chapter(name: "Next Steps") {
+        Guides you through some natural next steps to take after you have documented all public symbols in your project.
         
         @Image(source: 02-advanced.png, alt: "Thee puzzle pieces put together.")
         
         @TutorialReference(tutorial: "doc:Adding-a-Tutorial")
+        @TutorialReference(tutorial: "doc:Linking-to-Resources")
     }
 }
