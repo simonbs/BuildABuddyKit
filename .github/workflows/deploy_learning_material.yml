@@ -35,7 +35,7 @@ jobs:
         run: |
           mkdir _site
           $(xcrun --find docc) process-archive \
-            transform-for-static-hosting ../DerivedData/Build/Products/Debug-iphonesimulator/LearningMaterial.doccarchive \
+            transform-for-static-hosting ../DerivedData/Build/Products/Debug-iphoneos/LearningMaterial.doccarchive \
             --output-path _site \
             --hosting-base-path /
       - name: Create Custom index.html
