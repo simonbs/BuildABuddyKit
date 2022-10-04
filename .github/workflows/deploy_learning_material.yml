@@ -26,17 +26,17 @@ jobs:
         uses: actions/configure-pages@v2
       - name: Build Documentation
         run: |
-          cd LearningMaterial
           xcodebuild docbuild\
+            -workspace LearningMaterial\
             -scheme LearningMaterial\
             -destination 'generic/platform=iOS'\
             -derivedDataPath ../DerivedData
       - name: Process Archive
         run: |
-          mkdir ../_site
+          mkdir _site
           $(xcrun --find docc) process-archive \
             transform-for-static-hosting ../DerivedData/Build/Products/Debug-iphoneos/LearningMaterial.doccarchive\
-            --output-path ../_site \
+            --output-path _site \
             --hosting-base-path /
       - name: Create Custom index.html
         run: |
