@@ -27,6 +27,7 @@ jobs:
       - name: Build Documentation
         run: |
           xcodebuild docbuild\
+            -workspace LearningMaterial\
             -scheme LearningMaterial\
             -destination 'generic/platform=iOS'\
             -derivedDataPath ../DerivedData
@@ -34,9 +35,9 @@ jobs:
         run: |
           mkdir _site
           $(xcrun --find docc) process-archive \
-            transform-for-static-hosting ../DerivedData/Build/Products/Debug-iphonesimulator/LearningMaterial.doccarchive \
+            transform-for-static-hosting ../DerivedData/Build/Products/Debug-iphoneos/LearningMaterial.doccarchive\
             --output-path _site \
-            --hosting-base-path /
+            --hosting-base-path /BuildABuddyKit/
       - name: Create Custom index.html
         run: |
           rm _site/index.html
@@ -44,10 +45,10 @@ jobs:
           <!DOCTYPE html>
           <html>
             <head>
-              <meta http-equiv="refresh" content="0; url='https://simonbs.github.io/buildabuddykit/documentation/learningmaterial/'" />
+              <meta http-equiv="refresh" content="0; url='https://simonbs.github.io/BuildABuddyKit/tutorials/table-of-contents'" />
             </head>
            <body>
-              <p>Please follow <a href="https://simonbs.github.io/buildabuddykit/documentation/learningmaterial/">this link</a>.</p>
+              <p>Please follow <a href="https://simonbs.github.io/BuildABuddyKit/tutorials/table-of-contents">this link</a>.</p>
             </body>
           </html>
           EOM
