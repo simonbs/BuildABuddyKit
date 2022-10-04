@@ -252,7 +252,7 @@
             @Step {
                 Select `BuddyRenderer.swift` in the Project navigator.
                 
-                @Code(name: "BuddyRenderer.swift", file: 01-writing-documentation-03-02.swift)
+                @Code(name: "BuddyRenderer.swift", file: 01-writing-documentation-04-00.swift)
             }
             
             @Step {
