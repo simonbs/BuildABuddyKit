@@ -26,6 +26,7 @@ jobs:
         uses: actions/configure-pages@v2
       - name: Build Documentation
         run: |
+          cd LearningMaterial
           xcodebuild docbuild\
             -scheme LearningMaterial\
             -destination 'generic/platform=iOS'\
