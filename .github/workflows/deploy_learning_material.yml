@@ -45,10 +45,10 @@ jobs:
           <!DOCTYPE html>
           <html>
             <head>
-              <meta http-equiv="refresh" content="0; url='https://simonbs.github.io/BuildABuddyKit//documentation/learningmaterial/'" />
+              <meta http-equiv="refresh" content="0; url='https://simonbs.github.io/BuildABuddyKit/tutorials/table-of-contents'" />
             </head>
            <body>
-              <p>Please follow <a href="https://simonbs.github.io/BuildABuddyKit//documentation/learningmaterial/">this link</a>.</p>
+              <p>Please follow <a href="https://simonbs.github.io/BuildABuddyKit/tutorials/table-of-contents">this link</a>.</p>
             </body>
           </html>
           EOM
