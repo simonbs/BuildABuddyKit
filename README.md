@@ -1,13 +1,13 @@
 # 👋 BuildABuddyKit
 
-A framework for building customized characters and exporting them to images.
+A framework for building customized characters and exporting them to images. 
+
+The framework im this package is meant for learning purposes and will serve as an example Swift package for the learning material at [simonbs.github.io/BuildABuddyKit](https://simonbs.github.io/BuildABuddyKit/).
 
 ![A group of customized characters](Assets/hero-dark.png#gh-dark-mode-only)
 ![A group of customized characters](Assets/hero-light.png#gh-light-mode-only)
 
 ### 📚 Learning Material
-
-The framework is meant for learning purposes and will serve as an example Swift package for the learning material presented at FrenchKit 2022.
 
 The learning material that guides the reader through documenting BuildABuddyKit is available at [simonbs.github.io/BuildABuddyKit](https://simonbs.github.io/BuildABuddyKit/)
 
